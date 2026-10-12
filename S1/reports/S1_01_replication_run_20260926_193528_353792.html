@@ -1,0 +1,104 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>S1_01_replication_run</title><style>body{font:16px/1.55 system-ui;margin:30px;max-width:1500px}table{border-collapse:collapse;display:block;overflow:auto}td,th{border:1px solid #ddd;padding:6px}img{max-width:100%}pre{overflow:auto}</style><body><h1>S1_01_replication_run</h1><p>Executed 2026-09-26T19:35:28.353914-04:00; elapsed 10997.34 seconds.</p><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>stage</th>
+      <th>seconds</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Verify or extract archived inputs</td>
+      <td>0.981185</td>
+    </tr>
+    <tr>
+      <td>residential_preparation</td>
+      <td>5262.326645</td>
+    </tr>
+    <tr>
+      <td>residential_review</td>
+      <td>5.503966</td>
+    </tr>
+    <tr>
+      <td>outpatient_preparation</td>
+      <td>5720.585714</td>
+    </tr>
+    <tr>
+      <td>outpatient_review</td>
+      <td>7.537470</td>
+    </tr>
+    <tr>
+      <td>Verify linked manifests and sample membership</td>
+      <td>0.402155</td>
+    </tr>
+    <tr>
+      <td>Total elapsed</td>
+      <td>10997.337136</td>
+    </tr>
+  </tbody>
+</table><h3>Verified public inputs</h3><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>year</th>
+      <th>archive</th>
+      <th>archive_sha256</th>
+      <th>csv</th>
+      <th>csv_sha256</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2022</td>
+      <td>data/raw/TEDS-D-2022-DS0001-bndl-data-csv_v1.zip</td>
+      <td>732ffff1653f9cb0532a94a8133946e06781d39c1e8d9e2925a1790ec637c128</td>
+      <td>data/interim/csv/tedsd_puf_2022.csv</td>
+      <td>c254c53fb9ae6fbdce9b2ad3d1f31c246d2386d6093f71160149fd04216518b9</td>
+    </tr>
+    <tr>
+      <td>2023</td>
+      <td>data/raw/teds-d-2023-ds0001-bndl-data-csv_v1.zip</td>
+      <td>ca0b025cba04ae59d2772ab513823644ed4f8e6358531f2052b70ad5c65131b9</td>
+      <td>data/interim/csv/tedsd_puf_2023.csv</td>
+      <td>8073f862775c60e538ff0a607bd521339d1eca9189e1f454f60ef3948f9faf63</td>
+    </tr>
+  </tbody>
+</table><p><strong>residential_preparation:</strong> S1_01_data_preparation_20260926_163212_739830; full execution report <code>notebooks/code_0927/S1/reports/S1_01_01_residential_data_preparation_20260926_175953_195192_full.html</code></p>
+<p><strong>residential_review:</strong> S1_02_outcome_review_20260926_175955; full execution report <code>notebooks/code_0927/S1/reports/S1_01_02_residential_outcome_review_20260926_175959_326289_full.html</code></p>
+<p><strong>outpatient_preparation:</strong> S1_03_outpatient_data_preparation_20260926_180001_385313; full execution report <code>notebooks/code_0927/S1/reports/S1_01_03_outpatient_data_preparation_20260926_193519_560953_full.html</code></p>
+<p><strong>outpatient_review:</strong> S1_04_outpatient_outcome_review_20260926_193521_946088; full execution report <code>notebooks/code_0927/S1/reports/S1_01_04_outpatient_outcome_review_20260926_193527_496883_full.html</code></p>
+<h3>Replicated eligible samples</h3><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>branch</th>
+      <th>outcome</th>
+      <th>eligible_episodes</th>
+      <th>file</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>residential</td>
+      <td>completion</td>
+      <td>241118</td>
+      <td>notebooks/code_0927/S1/outputs/S1_01_data_preparation_20260926_163212_739830/completion_final_eligible.csv.gz</td>
+    </tr>
+    <tr>
+      <td>residential</td>
+      <td>frequency</td>
+      <td>146194</td>
+      <td>notebooks/code_0927/S1/outputs/S1_01_data_preparation_20260926_163212_739830/frequency_final_eligible.csv.gz</td>
+    </tr>
+    <tr>
+      <td>outpatient primary (14 states)</td>
+      <td>completion</td>
+      <td>386282</td>
+      <td>notebooks/code_0927/S1/outputs/S1_03_outpatient_data_preparation_20260926_180001_385313/completion_final_eligible.csv.gz</td>
+    </tr>
+    <tr>
+      <td>outpatient primary (14 states)</td>
+      <td>frequency</td>
+      <td>152566</td>
+      <td>notebooks/code_0927/S1/outputs/S1_03_outpatient_data_preparation_20260926_180001_385313/frequency_final_eligible.csv.gz</td>
+    </tr>
+  </tbody>
+</table><p><strong>Verification complete.</strong> The samples are integrity-checked eligible episodes. The outpatient frequency score-tail failure, differential frequency observation, outcome-coding differences and inferential uncertainty remain documented; this receipt is not a final causal analysis.</p>
+</body></html>

@@ -1,0 +1,3948 @@
+{
+  "status": "descriptive_review_complete_readiness_issues_identified",
+  "source_run": "S1_03_outpatient_data_preparation_20260922_130720_144842",
+  "source_manifest_sha256": "941df4785680569b42a7bdb2de63495eb82c27d0ec184a1e1e1a4a1c1051def8",
+  "completion_membership_sha256": "de0dfe5d0581975710dc6993a8d70b4b0da94fc02f52b9aab679446628d57c0d",
+  "reviewed_draws": [
+    {
+      "file": "completion_imputation_seed722/engineering_imputation_chain_1.csv.gz",
+      "sha256": "ea2341fa827b1c67139d289393ce5937e79c8a934554e7a4adaa46067f8136d1"
+    },
+    {
+      "file": "completion_imputation_seed722/engineering_imputation_chain_2.csv.gz",
+      "sha256": "3232742389a33828fdebab7d906bd83a01a757c040da657c6a06bd035673663f"
+    }
+  ],
+  "output_file": "completion_review.csv",
+  "output_sha256": "869487ed7fb8383057caa15f53d22df1bfb8326182defa3add88107e2c6e73d3",
+  "role": "descriptive outcome and geographic checks; no uncertainty interval or causal claim",
+  "reason_profile_state_year_arm": [
+    {
+      "STFIPS": 1,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 1,
+      "n": 1608,
+      "arm_n": 4944,
+      "percent": 32.52427184466019
+    },
+    {
+      "STFIPS": 1,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 2,
+      "n": 1896,
+      "arm_n": 4944,
+      "percent": 38.349514563106794
+    },
+    {
+      "STFIPS": 1,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 3,
+      "n": 295,
+      "arm_n": 4944,
+      "percent": 5.966828478964401
+    },
+    {
+      "STFIPS": 1,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 4,
+      "n": 391,
+      "arm_n": 4944,
+      "percent": 7.908576051779935
+    },
+    {
+      "STFIPS": 1,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 5,
+      "n": 161,
+      "arm_n": 4944,
+      "percent": 3.2564724919093853
+    },
+    {
+      "STFIPS": 1,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 6,
+      "n": 29,
+      "arm_n": 4944,
+      "percent": 0.5865695792880259
+    },
+    {
+      "STFIPS": 1,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 7,
+      "n": 564,
+      "arm_n": 4944,
+      "percent": 11.407766990291263
+    },
+    {
+      "STFIPS": 1,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 1,
+      "n": 376,
+      "arm_n": 1741,
+      "percent": 21.596783457782884
+    },
+    {
+      "STFIPS": 1,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 2,
+      "n": 824,
+      "arm_n": 1741,
+      "percent": 47.32912119471568
+    },
+    {
+      "STFIPS": 1,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 3,
+      "n": 47,
+      "arm_n": 1741,
+      "percent": 2.6995979322228605
+    },
+    {
+      "STFIPS": 1,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 4,
+      "n": 279,
+      "arm_n": 1741,
+      "percent": 16.025272831705916
+    },
+    {
+      "STFIPS": 1,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 5,
+      "n": 59,
+      "arm_n": 1741,
+      "percent": 3.388856978747846
+    },
+    {
+      "STFIPS": 1,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 6,
+      "n": 5,
+      "arm_n": 1741,
+      "percent": 0.2871912693854107
+    },
+    {
+      "STFIPS": 1,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 7,
+      "n": 151,
+      "arm_n": 1741,
+      "percent": 8.673176335439402
+    },
+    {
+      "STFIPS": 1,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 1,
+      "n": 1923,
+      "arm_n": 5638,
+      "percent": 34.10783965945371
+    },
+    {
+      "STFIPS": 1,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 2,
+      "n": 2062,
+      "arm_n": 5638,
+      "percent": 36.57325292656971
+    },
+    {
+      "STFIPS": 1,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 3,
+      "n": 230,
+      "arm_n": 5638,
+      "percent": 4.079460801702732
+    },
+    {
+      "STFIPS": 1,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 4,
+      "n": 547,
+      "arm_n": 5638,
+      "percent": 9.702021993614757
+    },
+    {
+      "STFIPS": 1,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 5,
+      "n": 196,
+      "arm_n": 5638,
+      "percent": 3.4764100744945017
+    },
+    {
+      "STFIPS": 1,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 6,
+      "n": 35,
+      "arm_n": 5638,
+      "percent": 0.6207875133025895
+    },
+    {
+      "STFIPS": 1,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 7,
+      "n": 645,
+      "arm_n": 5638,
+      "percent": 11.440227030862008
+    },
+    {
+      "STFIPS": 1,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 1,
+      "n": 432,
+      "arm_n": 1967,
+      "percent": 21.96237925775292
+    },
+    {
+      "STFIPS": 1,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 2,
+      "n": 918,
+      "arm_n": 1967,
+      "percent": 46.67005592272496
+    },
+    {
+      "STFIPS": 1,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 3,
+      "n": 67,
+      "arm_n": 1967,
+      "percent": 3.4062023385866804
+    },
+    {
+      "STFIPS": 1,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 4,
+      "n": 274,
+      "arm_n": 1967,
+      "percent": 13.929842399593289
+    },
+    {
+      "STFIPS": 1,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 5,
+      "n": 89,
+      "arm_n": 1967,
+      "percent": 4.524656837824097
+    },
+    {
+      "STFIPS": 1,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 6,
+      "n": 5,
+      "arm_n": 1967,
+      "percent": 0.2541942043721403
+    },
+    {
+      "STFIPS": 1,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 7,
+      "n": 182,
+      "arm_n": 1967,
+      "percent": 9.252669039145907
+    },
+    {
+      "STFIPS": 5,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 1,
+      "n": 990,
+      "arm_n": 2807,
+      "percent": 35.26897043106519
+    },
+    {
+      "STFIPS": 5,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 2,
+      "n": 716,
+      "arm_n": 2807,
+      "percent": 25.50765942287139
+    },
+    {
+      "STFIPS": 5,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 3,
+      "n": 508,
+      "arm_n": 2807,
+      "percent": 18.097613110081937
+    },
+    {
+      "STFIPS": 5,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 4,
+      "n": 523,
+      "arm_n": 2807,
+      "percent": 18.63199144994656
+    },
+    {
+      "STFIPS": 5,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 5,
+      "n": 54,
+      "arm_n": 2807,
+      "percent": 1.923762023512647
+    },
+    {
+      "STFIPS": 5,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 6,
+      "n": 16,
+      "arm_n": 2807,
+      "percent": 0.5700035625222658
+    },
+    {
+      "STFIPS": 5,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 1,
+      "n": 1284,
+      "arm_n": 1478,
+      "percent": 86.87415426251691
+    },
+    {
+      "STFIPS": 5,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 2,
+      "n": 37,
+      "arm_n": 1478,
+      "percent": 2.503382949932341
+    },
+    {
+      "STFIPS": 5,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 3,
+      "n": 61,
+      "arm_n": 1478,
+      "percent": 4.127198917456021
+    },
+    {
+      "STFIPS": 5,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 4,
+      "n": 89,
+      "arm_n": 1478,
+      "percent": 6.021650879566982
+    },
+    {
+      "STFIPS": 5,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 5,
+      "n": 6,
+      "arm_n": 1478,
+      "percent": 0.4059539918809202
+    },
+    {
+      "STFIPS": 5,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 6,
+      "n": 1,
+      "arm_n": 1478,
+      "percent": 0.06765899864682003
+    },
+    {
+      "STFIPS": 5,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 1,
+      "n": 1016,
+      "arm_n": 3177,
+      "percent": 31.979855209316966
+    },
+    {
+      "STFIPS": 5,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 2,
+      "n": 658,
+      "arm_n": 3177,
+      "percent": 20.71136292099465
+    },
+    {
+      "STFIPS": 5,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 3,
+      "n": 630,
+      "arm_n": 3177,
+      "percent": 19.8300283286119
+    },
+    {
+      "STFIPS": 5,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 4,
+      "n": 805,
+      "arm_n": 3177,
+      "percent": 25.33836953100409
+    },
+    {
+      "STFIPS": 5,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 5,
+      "n": 54,
+      "arm_n": 3177,
+      "percent": 1.6997167138810199
+    },
+    {
+      "STFIPS": 5,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 6,
+      "n": 12,
+      "arm_n": 3177,
+      "percent": 0.3777148253068933
+    },
+    {
+      "STFIPS": 5,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 7,
+      "n": 2,
+      "arm_n": 3177,
+      "percent": 0.06295247088448222
+    },
+    {
+      "STFIPS": 5,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 1,
+      "n": 1263,
+      "arm_n": 1439,
+      "percent": 87.76928422515635
+    },
+    {
+      "STFIPS": 5,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 2,
+      "n": 57,
+      "arm_n": 1439,
+      "percent": 3.961084086170952
+    },
+    {
+      "STFIPS": 5,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 3,
+      "n": 43,
+      "arm_n": 1439,
+      "percent": 2.9881862404447532
+    },
+    {
+      "STFIPS": 5,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 4,
+      "n": 62,
+      "arm_n": 1439,
+      "percent": 4.308547602501737
+    },
+    {
+      "STFIPS": 5,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 5,
+      "n": 12,
+      "arm_n": 1439,
+      "percent": 0.8339124391938847
+    },
+    {
+      "STFIPS": 5,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 6,
+      "n": 1,
+      "arm_n": 1439,
+      "percent": 0.06949270326615706
+    },
+    {
+      "STFIPS": 5,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 7,
+      "n": 1,
+      "arm_n": 1439,
+      "percent": 0.06949270326615706
+    },
+    {
+      "STFIPS": 8,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 1,
+      "n": 5633,
+      "arm_n": 18585,
+      "percent": 30.30938929244014
+    },
+    {
+      "STFIPS": 8,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 2,
+      "n": 6841,
+      "arm_n": 18585,
+      "percent": 36.80925477535647
+    },
+    {
+      "STFIPS": 8,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 3,
+      "n": 3274,
+      "arm_n": 18585,
+      "percent": 17.616357277374227
+    },
+    {
+      "STFIPS": 8,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 4,
+      "n": 1760,
+      "arm_n": 18585,
+      "percent": 9.470002690341673
+    },
+    {
+      "STFIPS": 8,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 5,
+      "n": 583,
+      "arm_n": 18585,
+      "percent": 3.136938391175679
+    },
+    {
+      "STFIPS": 8,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 6,
+      "n": 122,
+      "arm_n": 18585,
+      "percent": 0.656443368307775
+    },
+    {
+      "STFIPS": 8,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 7,
+      "n": 372,
+      "arm_n": 18585,
+      "percent": 2.0016142050040355
+    },
+    {
+      "STFIPS": 8,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 1,
+      "n": 2818,
+      "arm_n": 5401,
+      "percent": 52.175523051286795
+    },
+    {
+      "STFIPS": 8,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 2,
+      "n": 1212,
+      "arm_n": 5401,
+      "percent": 22.440288835400853
+    },
+    {
+      "STFIPS": 8,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 3,
+      "n": 635,
+      "arm_n": 5401,
+      "percent": 11.757082021847806
+    },
+    {
+      "STFIPS": 8,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 4,
+      "n": 603,
+      "arm_n": 5401,
+      "percent": 11.16459914830587
+    },
+    {
+      "STFIPS": 8,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 5,
+      "n": 52,
+      "arm_n": 5401,
+      "percent": 0.9627846695056471
+    },
+    {
+      "STFIPS": 8,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 6,
+      "n": 13,
+      "arm_n": 5401,
+      "percent": 0.24069616737641178
+    },
+    {
+      "STFIPS": 8,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 7,
+      "n": 68,
+      "arm_n": 5401,
+      "percent": 1.2590261062766155
+    },
+    {
+      "STFIPS": 8,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 1,
+      "n": 1180,
+      "arm_n": 4094,
+      "percent": 28.82266731802638
+    },
+    {
+      "STFIPS": 8,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 2,
+      "n": 1322,
+      "arm_n": 4094,
+      "percent": 32.29115779189057
+    },
+    {
+      "STFIPS": 8,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 3,
+      "n": 739,
+      "arm_n": 4094,
+      "percent": 18.050806057645335
+    },
+    {
+      "STFIPS": 8,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 4,
+      "n": 546,
+      "arm_n": 4094,
+      "percent": 13.336590131900342
+    },
+    {
+      "STFIPS": 8,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 5,
+      "n": 154,
+      "arm_n": 4094,
+      "percent": 3.761602344894968
+    },
+    {
+      "STFIPS": 8,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 6,
+      "n": 28,
+      "arm_n": 4094,
+      "percent": 0.6839276990718124
+    },
+    {
+      "STFIPS": 8,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 7,
+      "n": 125,
+      "arm_n": 4094,
+      "percent": 3.053248656570591
+    },
+    {
+      "STFIPS": 8,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 1,
+      "n": 1149,
+      "arm_n": 1966,
+      "percent": 58.44354018311292
+    },
+    {
+      "STFIPS": 8,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 2,
+      "n": 332,
+      "arm_n": 1966,
+      "percent": 16.887080366225838
+    },
+    {
+      "STFIPS": 8,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 3,
+      "n": 239,
+      "arm_n": 1966,
+      "percent": 12.156663275686673
+    },
+    {
+      "STFIPS": 8,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 4,
+      "n": 198,
+      "arm_n": 1966,
+      "percent": 10.07121057985758
+    },
+    {
+      "STFIPS": 8,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 5,
+      "n": 16,
+      "arm_n": 1966,
+      "percent": 0.8138351983723296
+    },
+    {
+      "STFIPS": 8,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 6,
+      "n": 2,
+      "arm_n": 1966,
+      "percent": 0.1017293997965412
+    },
+    {
+      "STFIPS": 8,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 7,
+      "n": 30,
+      "arm_n": 1966,
+      "percent": 1.525940996948118
+    },
+    {
+      "STFIPS": 9,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 1,
+      "n": 6371,
+      "arm_n": 20372,
+      "percent": 31.27331631651286
+    },
+    {
+      "STFIPS": 9,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 2,
+      "n": 5755,
+      "arm_n": 20372,
+      "percent": 28.24955821716081
+    },
+    {
+      "STFIPS": 9,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 3,
+      "n": 1005,
+      "arm_n": 20372,
+      "percent": 4.93324170430002
+    },
+    {
+      "STFIPS": 9,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 4,
+      "n": 4780,
+      "arm_n": 20372,
+      "percent": 23.463577459257806
+    },
+    {
+      "STFIPS": 9,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 5,
+      "n": 569,
+      "arm_n": 20372,
+      "percent": 2.793049283330061
+    },
+    {
+      "STFIPS": 9,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 6,
+      "n": 189,
+      "arm_n": 20372,
+      "percent": 0.9277439623011977
+    },
+    {
+      "STFIPS": 9,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 7,
+      "n": 1703,
+      "arm_n": 20372,
+      "percent": 8.359513057137248
+    },
+    {
+      "STFIPS": 9,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 1,
+      "n": 1894,
+      "arm_n": 5270,
+      "percent": 35.9392789373814
+    },
+    {
+      "STFIPS": 9,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 2,
+      "n": 1432,
+      "arm_n": 5270,
+      "percent": 27.17267552182163
+    },
+    {
+      "STFIPS": 9,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 3,
+      "n": 290,
+      "arm_n": 5270,
+      "percent": 5.502846299810247
+    },
+    {
+      "STFIPS": 9,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 4,
+      "n": 1147,
+      "arm_n": 5270,
+      "percent": 21.764705882352942
+    },
+    {
+      "STFIPS": 9,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 5,
+      "n": 114,
+      "arm_n": 5270,
+      "percent": 2.163187855787476
+    },
+    {
+      "STFIPS": 9,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 6,
+      "n": 18,
+      "arm_n": 5270,
+      "percent": 0.3415559772296015
+    },
+    {
+      "STFIPS": 9,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 7,
+      "n": 375,
+      "arm_n": 5270,
+      "percent": 7.115749525616699
+    },
+    {
+      "STFIPS": 9,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 1,
+      "n": 6612,
+      "arm_n": 18693,
+      "percent": 35.37152944952656
+    },
+    {
+      "STFIPS": 9,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 2,
+      "n": 4986,
+      "arm_n": 18693,
+      "percent": 26.67308618199326
+    },
+    {
+      "STFIPS": 9,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 3,
+      "n": 748,
+      "arm_n": 18693,
+      "percent": 4.001497886909538
+    },
+    {
+      "STFIPS": 9,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 4,
+      "n": 4568,
+      "arm_n": 18693,
+      "percent": 24.436955009896753
+    },
+    {
+      "STFIPS": 9,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 5,
+      "n": 548,
+      "arm_n": 18693,
+      "percent": 2.9315786658107315
+    },
+    {
+      "STFIPS": 9,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 6,
+      "n": 169,
+      "arm_n": 18693,
+      "percent": 0.904081741828492
+    },
+    {
+      "STFIPS": 9,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 7,
+      "n": 1062,
+      "arm_n": 18693,
+      "percent": 5.681271064034665
+    },
+    {
+      "STFIPS": 9,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 1,
+      "n": 2003,
+      "arm_n": 5388,
+      "percent": 37.17520415738679
+    },
+    {
+      "STFIPS": 9,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 2,
+      "n": 1720,
+      "arm_n": 5388,
+      "percent": 31.92279138827023
+    },
+    {
+      "STFIPS": 9,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 3,
+      "n": 245,
+      "arm_n": 5388,
+      "percent": 4.547141796585004
+    },
+    {
+      "STFIPS": 9,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 4,
+      "n": 974,
+      "arm_n": 5388,
+      "percent": 18.07720861172977
+    },
+    {
+      "STFIPS": 9,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 5,
+      "n": 159,
+      "arm_n": 5388,
+      "percent": 2.951002227171492
+    },
+    {
+      "STFIPS": 9,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 6,
+      "n": 12,
+      "arm_n": 5388,
+      "percent": 0.22271714922049
+    },
+    {
+      "STFIPS": 9,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 7,
+      "n": 275,
+      "arm_n": 5388,
+      "percent": 5.103934669636229
+    },
+    {
+      "STFIPS": 13,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 1,
+      "n": 428,
+      "arm_n": 17992,
+      "percent": 2.3788350377945755
+    },
+    {
+      "STFIPS": 13,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 2,
+      "n": 16007,
+      "arm_n": 17992,
+      "percent": 88.96731880835927
+    },
+    {
+      "STFIPS": 13,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 3,
+      "n": 934,
+      "arm_n": 17992,
+      "percent": 5.191196087149844
+    },
+    {
+      "STFIPS": 13,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 4,
+      "n": 112,
+      "arm_n": 17992,
+      "percent": 0.6224988883948421
+    },
+    {
+      "STFIPS": 13,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 5,
+      "n": 103,
+      "arm_n": 17992,
+      "percent": 0.5724766562916852
+    },
+    {
+      "STFIPS": 13,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 6,
+      "n": 50,
+      "arm_n": 17992,
+      "percent": 0.2779012894619831
+    },
+    {
+      "STFIPS": 13,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 7,
+      "n": 358,
+      "arm_n": 17992,
+      "percent": 1.989773232547799
+    },
+    {
+      "STFIPS": 13,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 1,
+      "n": 722,
+      "arm_n": 4869,
+      "percent": 14.828506880262887
+    },
+    {
+      "STFIPS": 13,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 2,
+      "n": 3818,
+      "arm_n": 4869,
+      "percent": 78.41445882111317
+    },
+    {
+      "STFIPS": 13,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 3,
+      "n": 81,
+      "arm_n": 4869,
+      "percent": 1.6635859519408502
+    },
+    {
+      "STFIPS": 13,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 4,
+      "n": 114,
+      "arm_n": 4869,
+      "percent": 2.341343191620456
+    },
+    {
+      "STFIPS": 13,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 5,
+      "n": 11,
+      "arm_n": 4869,
+      "percent": 0.2259190798932019
+    },
+    {
+      "STFIPS": 13,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 6,
+      "n": 6,
+      "arm_n": 4869,
+      "percent": 0.12322858903265557
+    },
+    {
+      "STFIPS": 13,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 7,
+      "n": 117,
+      "arm_n": 4869,
+      "percent": 2.402957486136784
+    },
+    {
+      "STFIPS": 13,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 1,
+      "n": 270,
+      "arm_n": 16960,
+      "percent": 1.5919811320754718
+    },
+    {
+      "STFIPS": 13,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 2,
+      "n": 15436,
+      "arm_n": 16960,
+      "percent": 91.01415094339623
+    },
+    {
+      "STFIPS": 13,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 3,
+      "n": 847,
+      "arm_n": 16960,
+      "percent": 4.994103773584905
+    },
+    {
+      "STFIPS": 13,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 4,
+      "n": 84,
+      "arm_n": 16960,
+      "percent": 0.49528301886792453
+    },
+    {
+      "STFIPS": 13,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 5,
+      "n": 70,
+      "arm_n": 16960,
+      "percent": 0.41273584905660377
+    },
+    {
+      "STFIPS": 13,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 6,
+      "n": 26,
+      "arm_n": 16960,
+      "percent": 0.15330188679245282
+    },
+    {
+      "STFIPS": 13,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 7,
+      "n": 227,
+      "arm_n": 16960,
+      "percent": 1.338443396226415
+    },
+    {
+      "STFIPS": 13,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 1,
+      "n": 501,
+      "arm_n": 4862,
+      "percent": 10.30440148087207
+    },
+    {
+      "STFIPS": 13,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 2,
+      "n": 3627,
+      "arm_n": 4862,
+      "percent": 74.59893048128342
+    },
+    {
+      "STFIPS": 13,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 3,
+      "n": 86,
+      "arm_n": 4862,
+      "percent": 1.7688194158782393
+    },
+    {
+      "STFIPS": 13,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 4,
+      "n": 561,
+      "arm_n": 4862,
+      "percent": 11.538461538461538
+    },
+    {
+      "STFIPS": 13,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 5,
+      "n": 9,
+      "arm_n": 4862,
+      "percent": 0.1851090086384204
+    },
+    {
+      "STFIPS": 13,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 6,
+      "n": 7,
+      "arm_n": 4862,
+      "percent": 0.1439736733854381
+    },
+    {
+      "STFIPS": 13,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 7,
+      "n": 71,
+      "arm_n": 4862,
+      "percent": 1.4603044014808721
+    },
+    {
+      "STFIPS": 15,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 1,
+      "n": 483,
+      "arm_n": 1094,
+      "percent": 44.14990859232176
+    },
+    {
+      "STFIPS": 15,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 2,
+      "n": 167,
+      "arm_n": 1094,
+      "percent": 15.26508226691042
+    },
+    {
+      "STFIPS": 15,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 3,
+      "n": 41,
+      "arm_n": 1094,
+      "percent": 3.7477148080438756
+    },
+    {
+      "STFIPS": 15,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 4,
+      "n": 392,
+      "arm_n": 1094,
+      "percent": 35.831809872029254
+    },
+    {
+      "STFIPS": 15,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 5,
+      "n": 4,
+      "arm_n": 1094,
+      "percent": 0.3656307129798903
+    },
+    {
+      "STFIPS": 15,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 7,
+      "n": 7,
+      "arm_n": 1094,
+      "percent": 0.6398537477148081
+    },
+    {
+      "STFIPS": 15,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 1,
+      "n": 25,
+      "arm_n": 1717,
+      "percent": 1.4560279557367501
+    },
+    {
+      "STFIPS": 15,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 2,
+      "n": 237,
+      "arm_n": 1717,
+      "percent": 13.803145020384392
+    },
+    {
+      "STFIPS": 15,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 3,
+      "n": 364,
+      "arm_n": 1717,
+      "percent": 21.19976703552708
+    },
+    {
+      "STFIPS": 15,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 4,
+      "n": 1062,
+      "arm_n": 1717,
+      "percent": 61.85206755969715
+    },
+    {
+      "STFIPS": 15,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 5,
+      "n": 14,
+      "arm_n": 1717,
+      "percent": 0.81537565521258
+    },
+    {
+      "STFIPS": 15,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 6,
+      "n": 2,
+      "arm_n": 1717,
+      "percent": 0.11648223645894001
+    },
+    {
+      "STFIPS": 15,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 7,
+      "n": 13,
+      "arm_n": 1717,
+      "percent": 0.7571345369831101
+    },
+    {
+      "STFIPS": 15,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 1,
+      "n": 418,
+      "arm_n": 1221,
+      "percent": 34.234234234234236
+    },
+    {
+      "STFIPS": 15,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 2,
+      "n": 239,
+      "arm_n": 1221,
+      "percent": 19.574119574119575
+    },
+    {
+      "STFIPS": 15,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 3,
+      "n": 71,
+      "arm_n": 1221,
+      "percent": 5.814905814905815
+    },
+    {
+      "STFIPS": 15,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 4,
+      "n": 486,
+      "arm_n": 1221,
+      "percent": 39.8034398034398
+    },
+    {
+      "STFIPS": 15,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 5,
+      "n": 4,
+      "arm_n": 1221,
+      "percent": 0.3276003276003276
+    },
+    {
+      "STFIPS": 15,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 7,
+      "n": 3,
+      "arm_n": 1221,
+      "percent": 0.2457002457002457
+    },
+    {
+      "STFIPS": 15,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 1,
+      "n": 42,
+      "arm_n": 1814,
+      "percent": 2.3153252480705624
+    },
+    {
+      "STFIPS": 15,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 2,
+      "n": 261,
+      "arm_n": 1814,
+      "percent": 14.388092613009922
+    },
+    {
+      "STFIPS": 15,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 3,
+      "n": 355,
+      "arm_n": 1814,
+      "percent": 19.570011025358323
+    },
+    {
+      "STFIPS": 15,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 4,
+      "n": 1120,
+      "arm_n": 1814,
+      "percent": 61.742006615215
+    },
+    {
+      "STFIPS": 15,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 5,
+      "n": 21,
+      "arm_n": 1814,
+      "percent": 1.1576626240352812
+    },
+    {
+      "STFIPS": 15,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 6,
+      "n": 2,
+      "arm_n": 1814,
+      "percent": 0.11025358324145534
+    },
+    {
+      "STFIPS": 15,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 7,
+      "n": 13,
+      "arm_n": 1814,
+      "percent": 0.7166482910694597
+    },
+    {
+      "STFIPS": 17,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 1,
+      "n": 2053,
+      "arm_n": 5165,
+      "percent": 39.748305905130685
+    },
+    {
+      "STFIPS": 17,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 2,
+      "n": 1881,
+      "arm_n": 5165,
+      "percent": 36.41819941916747
+    },
+    {
+      "STFIPS": 17,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 3,
+      "n": 536,
+      "arm_n": 5165,
+      "percent": 10.377541142303969
+    },
+    {
+      "STFIPS": 17,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 4,
+      "n": 593,
+      "arm_n": 5165,
+      "percent": 11.481122942884802
+    },
+    {
+      "STFIPS": 17,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 5,
+      "n": 79,
+      "arm_n": 5165,
+      "percent": 1.5295256534365924
+    },
+    {
+      "STFIPS": 17,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 6,
+      "n": 21,
+      "arm_n": 5165,
+      "percent": 0.40658276863504356
+    },
+    {
+      "STFIPS": 17,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 7,
+      "n": 2,
+      "arm_n": 5165,
+      "percent": 0.03872216844143272
+    },
+    {
+      "STFIPS": 17,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 1,
+      "n": 409,
+      "arm_n": 2071,
+      "percent": 19.748913568324483
+    },
+    {
+      "STFIPS": 17,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 2,
+      "n": 554,
+      "arm_n": 2071,
+      "percent": 26.750362143891838
+    },
+    {
+      "STFIPS": 17,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 3,
+      "n": 241,
+      "arm_n": 2071,
+      "percent": 11.636890391115402
+    },
+    {
+      "STFIPS": 17,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 4,
+      "n": 827,
+      "arm_n": 2071,
+      "percent": 39.932399806856594
+    },
+    {
+      "STFIPS": 17,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 5,
+      "n": 35,
+      "arm_n": 2071,
+      "percent": 1.6900048285852245
+    },
+    {
+      "STFIPS": 17,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 6,
+      "n": 5,
+      "arm_n": 2071,
+      "percent": 0.24142926122646063
+    },
+    {
+      "STFIPS": 17,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 1,
+      "n": 4089,
+      "arm_n": 13263,
+      "percent": 30.830128930106312
+    },
+    {
+      "STFIPS": 17,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 2,
+      "n": 4834,
+      "arm_n": 13263,
+      "percent": 36.44725929276936
+    },
+    {
+      "STFIPS": 17,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 3,
+      "n": 1652,
+      "arm_n": 13263,
+      "percent": 12.4557038377441
+    },
+    {
+      "STFIPS": 17,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 4,
+      "n": 2429,
+      "arm_n": 13263,
+      "percent": 18.314106913971198
+    },
+    {
+      "STFIPS": 17,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 5,
+      "n": 226,
+      "arm_n": 13263,
+      "percent": 1.7039885395461056
+    },
+    {
+      "STFIPS": 17,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 6,
+      "n": 29,
+      "arm_n": 13263,
+      "percent": 0.21865339666742065
+    },
+    {
+      "STFIPS": 17,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 7,
+      "n": 4,
+      "arm_n": 13263,
+      "percent": 0.030159089195506295
+    },
+    {
+      "STFIPS": 17,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 1,
+      "n": 873,
+      "arm_n": 5180,
+      "percent": 16.853281853281853
+    },
+    {
+      "STFIPS": 17,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 2,
+      "n": 1655,
+      "arm_n": 5180,
+      "percent": 31.94980694980695
+    },
+    {
+      "STFIPS": 17,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 3,
+      "n": 502,
+      "arm_n": 5180,
+      "percent": 9.691119691119692
+    },
+    {
+      "STFIPS": 17,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 4,
+      "n": 1993,
+      "arm_n": 5180,
+      "percent": 38.47490347490348
+    },
+    {
+      "STFIPS": 17,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 5,
+      "n": 136,
+      "arm_n": 5180,
+      "percent": 2.6254826254826256
+    },
+    {
+      "STFIPS": 17,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 6,
+      "n": 17,
+      "arm_n": 5180,
+      "percent": 0.3281853281853282
+    },
+    {
+      "STFIPS": 17,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 7,
+      "n": 4,
+      "arm_n": 5180,
+      "percent": 0.07722007722007722
+    },
+    {
+      "STFIPS": 29,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 1,
+      "n": 3615,
+      "arm_n": 13748,
+      "percent": 26.29473377945883
+    },
+    {
+      "STFIPS": 29,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 2,
+      "n": 5324,
+      "arm_n": 13748,
+      "percent": 38.72563281931917
+    },
+    {
+      "STFIPS": 29,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 3,
+      "n": 497,
+      "arm_n": 13748,
+      "percent": 3.6150712830957232
+    },
+    {
+      "STFIPS": 29,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 4,
+      "n": 3687,
+      "arm_n": 13748,
+      "percent": 26.81844631946465
+    },
+    {
+      "STFIPS": 29,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 5,
+      "n": 242,
+      "arm_n": 13748,
+      "percent": 1.7602560372417806
+    },
+    {
+      "STFIPS": 29,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 6,
+      "n": 125,
+      "arm_n": 13748,
+      "percent": 0.9092231597323247
+    },
+    {
+      "STFIPS": 29,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 7,
+      "n": 258,
+      "arm_n": 13748,
+      "percent": 1.8766366016875182
+    },
+    {
+      "STFIPS": 29,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 1,
+      "n": 2797,
+      "arm_n": 18535,
+      "percent": 15.090369571081737
+    },
+    {
+      "STFIPS": 29,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 2,
+      "n": 8145,
+      "arm_n": 18535,
+      "percent": 43.94388993795522
+    },
+    {
+      "STFIPS": 29,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 3,
+      "n": 930,
+      "arm_n": 18535,
+      "percent": 5.017534394388994
+    },
+    {
+      "STFIPS": 29,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 4,
+      "n": 5727,
+      "arm_n": 18535,
+      "percent": 30.898300512543837
+    },
+    {
+      "STFIPS": 29,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 5,
+      "n": 459,
+      "arm_n": 18535,
+      "percent": 2.4763960075532774
+    },
+    {
+      "STFIPS": 29,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 6,
+      "n": 130,
+      "arm_n": 18535,
+      "percent": 0.7013757755597518
+    },
+    {
+      "STFIPS": 29,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 7,
+      "n": 347,
+      "arm_n": 18535,
+      "percent": 1.8721338009171837
+    },
+    {
+      "STFIPS": 29,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 1,
+      "n": 2921,
+      "arm_n": 8661,
+      "percent": 33.72589770234384
+    },
+    {
+      "STFIPS": 29,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 2,
+      "n": 3606,
+      "arm_n": 8661,
+      "percent": 41.634915136820226
+    },
+    {
+      "STFIPS": 29,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 3,
+      "n": 267,
+      "arm_n": 8661,
+      "percent": 3.082784897817804
+    },
+    {
+      "STFIPS": 29,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 4,
+      "n": 1402,
+      "arm_n": 8661,
+      "percent": 16.187507216256783
+    },
+    {
+      "STFIPS": 29,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 5,
+      "n": 213,
+      "arm_n": 8661,
+      "percent": 2.459300311742293
+    },
+    {
+      "STFIPS": 29,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 6,
+      "n": 65,
+      "arm_n": 8661,
+      "percent": 0.7504907054612632
+    },
+    {
+      "STFIPS": 29,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 7,
+      "n": 187,
+      "arm_n": 8661,
+      "percent": 2.159104029557788
+    },
+    {
+      "STFIPS": 29,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 1,
+      "n": 1689,
+      "arm_n": 8284,
+      "percent": 20.3887011105746
+    },
+    {
+      "STFIPS": 29,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 2,
+      "n": 3113,
+      "arm_n": 8284,
+      "percent": 37.5784645098986
+    },
+    {
+      "STFIPS": 29,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 3,
+      "n": 448,
+      "arm_n": 8284,
+      "percent": 5.408015451472719
+    },
+    {
+      "STFIPS": 29,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 4,
+      "n": 2686,
+      "arm_n": 8284,
+      "percent": 32.42394978271366
+    },
+    {
+      "STFIPS": 29,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 5,
+      "n": 142,
+      "arm_n": 8284,
+      "percent": 1.7141477547078705
+    },
+    {
+      "STFIPS": 29,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 6,
+      "n": 48,
+      "arm_n": 8284,
+      "percent": 0.5794302269435055
+    },
+    {
+      "STFIPS": 29,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 7,
+      "n": 158,
+      "arm_n": 8284,
+      "percent": 1.907291163689039
+    },
+    {
+      "STFIPS": 34,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 1,
+      "n": 10153,
+      "arm_n": 26092,
+      "percent": 38.91231028667791
+    },
+    {
+      "STFIPS": 34,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 2,
+      "n": 10160,
+      "arm_n": 26092,
+      "percent": 38.93913843323624
+    },
+    {
+      "STFIPS": 34,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 3,
+      "n": 884,
+      "arm_n": 26092,
+      "percent": 3.388011651080791
+    },
+    {
+      "STFIPS": 34,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 4,
+      "n": 271,
+      "arm_n": 26092,
+      "percent": 1.038632531043998
+    },
+    {
+      "STFIPS": 34,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 5,
+      "n": 539,
+      "arm_n": 26092,
+      "percent": 2.0657672849915683
+    },
+    {
+      "STFIPS": 34,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 6,
+      "n": 250,
+      "arm_n": 26092,
+      "percent": 0.958148091369002
+    },
+    {
+      "STFIPS": 34,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 7,
+      "n": 3835,
+      "arm_n": 26092,
+      "percent": 14.697991721600491
+    },
+    {
+      "STFIPS": 34,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 1,
+      "n": 7354,
+      "arm_n": 19334,
+      "percent": 38.03661942691631
+    },
+    {
+      "STFIPS": 34,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 2,
+      "n": 6804,
+      "arm_n": 19334,
+      "percent": 35.19188993482983
+    },
+    {
+      "STFIPS": 34,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 3,
+      "n": 1168,
+      "arm_n": 19334,
+      "percent": 6.041170994103652
+    },
+    {
+      "STFIPS": 34,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 4,
+      "n": 185,
+      "arm_n": 19334,
+      "percent": 0.9568635564290886
+    },
+    {
+      "STFIPS": 34,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 5,
+      "n": 380,
+      "arm_n": 19334,
+      "percent": 1.9654494672597496
+    },
+    {
+      "STFIPS": 34,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 6,
+      "n": 73,
+      "arm_n": 19334,
+      "percent": 0.37757318713147825
+    },
+    {
+      "STFIPS": 34,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 7,
+      "n": 3370,
+      "arm_n": 19334,
+      "percent": 17.430433433329885
+    },
+    {
+      "STFIPS": 34,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 1,
+      "n": 10132,
+      "arm_n": 26524,
+      "percent": 38.199366611370834
+    },
+    {
+      "STFIPS": 34,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 2,
+      "n": 9830,
+      "arm_n": 26524,
+      "percent": 37.060775147036644
+    },
+    {
+      "STFIPS": 34,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 3,
+      "n": 740,
+      "arm_n": 26524,
+      "percent": 2.789926104659931
+    },
+    {
+      "STFIPS": 34,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 4,
+      "n": 1128,
+      "arm_n": 26524,
+      "percent": 4.252752224400543
+    },
+    {
+      "STFIPS": 34,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 5,
+      "n": 506,
+      "arm_n": 26524,
+      "percent": 1.90770622832152
+    },
+    {
+      "STFIPS": 34,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 6,
+      "n": 226,
+      "arm_n": 26524,
+      "percent": 0.8520585130447896
+    },
+    {
+      "STFIPS": 34,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 7,
+      "n": 3962,
+      "arm_n": 26524,
+      "percent": 14.937415171165737
+    },
+    {
+      "STFIPS": 34,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 1,
+      "n": 7139,
+      "arm_n": 19113,
+      "percent": 37.351540836080154
+    },
+    {
+      "STFIPS": 34,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 2,
+      "n": 6424,
+      "arm_n": 19113,
+      "percent": 33.610631507351016
+    },
+    {
+      "STFIPS": 34,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 3,
+      "n": 1251,
+      "arm_n": 19113,
+      "percent": 6.54528331502119
+    },
+    {
+      "STFIPS": 34,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 4,
+      "n": 708,
+      "arm_n": 19113,
+      "percent": 3.704285041594726
+    },
+    {
+      "STFIPS": 34,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 5,
+      "n": 307,
+      "arm_n": 19113,
+      "percent": 1.6062365928948883
+    },
+    {
+      "STFIPS": 34,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 6,
+      "n": 37,
+      "arm_n": 19113,
+      "percent": 0.19358551771045884
+    },
+    {
+      "STFIPS": 34,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 7,
+      "n": 3247,
+      "arm_n": 19113,
+      "percent": 16.988437189347565
+    },
+    {
+      "STFIPS": 39,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 1,
+      "n": 1161,
+      "arm_n": 4553,
+      "percent": 25.49967054689216
+    },
+    {
+      "STFIPS": 39,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 2,
+      "n": 1100,
+      "arm_n": 4553,
+      "percent": 24.15989457500549
+    },
+    {
+      "STFIPS": 39,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 3,
+      "n": 1084,
+      "arm_n": 4553,
+      "percent": 23.808477926641775
+    },
+    {
+      "STFIPS": 39,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 4,
+      "n": 176,
+      "arm_n": 4553,
+      "percent": 3.8655831320008787
+    },
+    {
+      "STFIPS": 39,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 5,
+      "n": 166,
+      "arm_n": 4553,
+      "percent": 3.645947726773556
+    },
+    {
+      "STFIPS": 39,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 6,
+      "n": 31,
+      "arm_n": 4553,
+      "percent": 0.6808697562047002
+    },
+    {
+      "STFIPS": 39,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 7,
+      "n": 835,
+      "arm_n": 4553,
+      "percent": 18.33955633648144
+    },
+    {
+      "STFIPS": 39,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 1,
+      "n": 416,
+      "arm_n": 2521,
+      "percent": 16.501388337961128
+    },
+    {
+      "STFIPS": 39,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 2,
+      "n": 638,
+      "arm_n": 2521,
+      "percent": 25.307417691392306
+    },
+    {
+      "STFIPS": 39,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 3,
+      "n": 924,
+      "arm_n": 2521,
+      "percent": 36.65212217374058
+    },
+    {
+      "STFIPS": 39,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 4,
+      "n": 114,
+      "arm_n": 2521,
+      "percent": 4.522015073383578
+    },
+    {
+      "STFIPS": 39,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 5,
+      "n": 98,
+      "arm_n": 2521,
+      "percent": 3.8873462911543037
+    },
+    {
+      "STFIPS": 39,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 6,
+      "n": 24,
+      "arm_n": 2521,
+      "percent": 0.9520031733439112
+    },
+    {
+      "STFIPS": 39,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 7,
+      "n": 307,
+      "arm_n": 2521,
+      "percent": 12.177707259024197
+    },
+    {
+      "STFIPS": 39,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 1,
+      "n": 1168,
+      "arm_n": 4815,
+      "percent": 24.25752855659398
+    },
+    {
+      "STFIPS": 39,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 2,
+      "n": 1362,
+      "arm_n": 4815,
+      "percent": 28.286604361370717
+    },
+    {
+      "STFIPS": 39,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 3,
+      "n": 1011,
+      "arm_n": 4815,
+      "percent": 20.996884735202492
+    },
+    {
+      "STFIPS": 39,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 4,
+      "n": 198,
+      "arm_n": 4815,
+      "percent": 4.11214953271028
+    },
+    {
+      "STFIPS": 39,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 5,
+      "n": 188,
+      "arm_n": 4815,
+      "percent": 3.9044652128764277
+    },
+    {
+      "STFIPS": 39,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 6,
+      "n": 39,
+      "arm_n": 4815,
+      "percent": 0.8099688473520249
+    },
+    {
+      "STFIPS": 39,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 7,
+      "n": 849,
+      "arm_n": 4815,
+      "percent": 17.63239875389408
+    },
+    {
+      "STFIPS": 39,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 1,
+      "n": 508,
+      "arm_n": 2510,
+      "percent": 20.239043824701195
+    },
+    {
+      "STFIPS": 39,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 2,
+      "n": 687,
+      "arm_n": 2510,
+      "percent": 27.37051792828685
+    },
+    {
+      "STFIPS": 39,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 3,
+      "n": 836,
+      "arm_n": 2510,
+      "percent": 33.30677290836653
+    },
+    {
+      "STFIPS": 39,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 4,
+      "n": 96,
+      "arm_n": 2510,
+      "percent": 3.8247011952191237
+    },
+    {
+      "STFIPS": 39,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 5,
+      "n": 84,
+      "arm_n": 2510,
+      "percent": 3.346613545816733
+    },
+    {
+      "STFIPS": 39,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 6,
+      "n": 15,
+      "arm_n": 2510,
+      "percent": 0.5976095617529881
+    },
+    {
+      "STFIPS": 39,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 7,
+      "n": 284,
+      "arm_n": 2510,
+      "percent": 11.314741035856574
+    },
+    {
+      "STFIPS": 42,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 1,
+      "n": 1965,
+      "arm_n": 7472,
+      "percent": 26.298179871520343
+    },
+    {
+      "STFIPS": 42,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 2,
+      "n": 2247,
+      "arm_n": 7472,
+      "percent": 30.072269807280513
+    },
+    {
+      "STFIPS": 42,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 3,
+      "n": 499,
+      "arm_n": 7472,
+      "percent": 6.678265524625267
+    },
+    {
+      "STFIPS": 42,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 4,
+      "n": 412,
+      "arm_n": 7472,
+      "percent": 5.5139186295503215
+    },
+    {
+      "STFIPS": 42,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 5,
+      "n": 682,
+      "arm_n": 7472,
+      "percent": 9.127408993576017
+    },
+    {
+      "STFIPS": 42,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 6,
+      "n": 41,
+      "arm_n": 7472,
+      "percent": 0.5487152034261242
+    },
+    {
+      "STFIPS": 42,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 7,
+      "n": 1626,
+      "arm_n": 7472,
+      "percent": 21.761241970021413
+    },
+    {
+      "STFIPS": 42,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 1,
+      "n": 701,
+      "arm_n": 2250,
+      "percent": 31.155555555555555
+    },
+    {
+      "STFIPS": 42,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 2,
+      "n": 687,
+      "arm_n": 2250,
+      "percent": 30.533333333333335
+    },
+    {
+      "STFIPS": 42,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 3,
+      "n": 143,
+      "arm_n": 2250,
+      "percent": 6.355555555555555
+    },
+    {
+      "STFIPS": 42,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 4,
+      "n": 127,
+      "arm_n": 2250,
+      "percent": 5.644444444444445
+    },
+    {
+      "STFIPS": 42,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 5,
+      "n": 78,
+      "arm_n": 2250,
+      "percent": 3.466666666666667
+    },
+    {
+      "STFIPS": 42,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 6,
+      "n": 13,
+      "arm_n": 2250,
+      "percent": 0.5777777777777777
+    },
+    {
+      "STFIPS": 42,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 7,
+      "n": 501,
+      "arm_n": 2250,
+      "percent": 22.266666666666666
+    },
+    {
+      "STFIPS": 42,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 1,
+      "n": 2263,
+      "arm_n": 7495,
+      "percent": 30.193462308205472
+    },
+    {
+      "STFIPS": 42,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 2,
+      "n": 1732,
+      "arm_n": 7495,
+      "percent": 23.108739159439626
+    },
+    {
+      "STFIPS": 42,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 3,
+      "n": 569,
+      "arm_n": 7495,
+      "percent": 7.591727818545698
+    },
+    {
+      "STFIPS": 42,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 4,
+      "n": 375,
+      "arm_n": 7495,
+      "percent": 5.003335557038025
+    },
+    {
+      "STFIPS": 42,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 5,
+      "n": 713,
+      "arm_n": 7495,
+      "percent": 9.513008672448299
+    },
+    {
+      "STFIPS": 42,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 6,
+      "n": 23,
+      "arm_n": 7495,
+      "percent": 0.3068712474983322
+    },
+    {
+      "STFIPS": 42,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 7,
+      "n": 1820,
+      "arm_n": 7495,
+      "percent": 24.28285523682455
+    },
+    {
+      "STFIPS": 42,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 1,
+      "n": 674,
+      "arm_n": 2096,
+      "percent": 32.156488549618324
+    },
+    {
+      "STFIPS": 42,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 2,
+      "n": 637,
+      "arm_n": 2096,
+      "percent": 30.391221374045802
+    },
+    {
+      "STFIPS": 42,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 3,
+      "n": 95,
+      "arm_n": 2096,
+      "percent": 4.532442748091603
+    },
+    {
+      "STFIPS": 42,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 4,
+      "n": 120,
+      "arm_n": 2096,
+      "percent": 5.7251908396946565
+    },
+    {
+      "STFIPS": 42,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 5,
+      "n": 78,
+      "arm_n": 2096,
+      "percent": 3.7213740458015265
+    },
+    {
+      "STFIPS": 42,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 6,
+      "n": 9,
+      "arm_n": 2096,
+      "percent": 0.42938931297709926
+    },
+    {
+      "STFIPS": 42,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 7,
+      "n": 483,
+      "arm_n": 2096,
+      "percent": 23.043893129770993
+    },
+    {
+      "STFIPS": 46,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 1,
+      "n": 1514,
+      "arm_n": 3907,
+      "percent": 38.75095981571538
+    },
+    {
+      "STFIPS": 46,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 2,
+      "n": 815,
+      "arm_n": 3907,
+      "percent": 20.85999488098285
+    },
+    {
+      "STFIPS": 46,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 3,
+      "n": 335,
+      "arm_n": 3907,
+      "percent": 8.574353724084975
+    },
+    {
+      "STFIPS": 46,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 4,
+      "n": 538,
+      "arm_n": 3907,
+      "percent": 13.770156130023036
+    },
+    {
+      "STFIPS": 46,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 5,
+      "n": 162,
+      "arm_n": 3907,
+      "percent": 4.146403890453033
+    },
+    {
+      "STFIPS": 46,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 6,
+      "n": 6,
+      "arm_n": 3907,
+      "percent": 0.15357051446122344
+    },
+    {
+      "STFIPS": 46,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 7,
+      "n": 537,
+      "arm_n": 3907,
+      "percent": 13.744561044279498
+    },
+    {
+      "STFIPS": 46,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 1,
+      "n": 611,
+      "arm_n": 2203,
+      "percent": 27.734906945074897
+    },
+    {
+      "STFIPS": 46,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 2,
+      "n": 483,
+      "arm_n": 2203,
+      "percent": 21.92464820699047
+    },
+    {
+      "STFIPS": 46,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 3,
+      "n": 160,
+      "arm_n": 2203,
+      "percent": 7.262823422605538
+    },
+    {
+      "STFIPS": 46,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 4,
+      "n": 653,
+      "arm_n": 2203,
+      "percent": 29.64139809350885
+    },
+    {
+      "STFIPS": 46,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 5,
+      "n": 66,
+      "arm_n": 2203,
+      "percent": 2.9959146618247843
+    },
+    {
+      "STFIPS": 46,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 6,
+      "n": 3,
+      "arm_n": 2203,
+      "percent": 0.13617793917385385
+    },
+    {
+      "STFIPS": 46,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 7,
+      "n": 227,
+      "arm_n": 2203,
+      "percent": 10.304130730821607
+    },
+    {
+      "STFIPS": 46,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 1,
+      "n": 1918,
+      "arm_n": 4772,
+      "percent": 40.19279128248114
+    },
+    {
+      "STFIPS": 46,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 2,
+      "n": 1095,
+      "arm_n": 4772,
+      "percent": 22.946353730092206
+    },
+    {
+      "STFIPS": 46,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 3,
+      "n": 276,
+      "arm_n": 4772,
+      "percent": 5.783738474434199
+    },
+    {
+      "STFIPS": 46,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 4,
+      "n": 672,
+      "arm_n": 4772,
+      "percent": 14.082145850796312
+    },
+    {
+      "STFIPS": 46,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 5,
+      "n": 171,
+      "arm_n": 4772,
+      "percent": 3.583403185247276
+    },
+    {
+      "STFIPS": 46,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 6,
+      "n": 14,
+      "arm_n": 4772,
+      "percent": 0.2933780385582565
+    },
+    {
+      "STFIPS": 46,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 7,
+      "n": 626,
+      "arm_n": 4772,
+      "percent": 13.118189438390612
+    },
+    {
+      "STFIPS": 46,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 1,
+      "n": 693,
+      "arm_n": 2513,
+      "percent": 27.57660167130919
+    },
+    {
+      "STFIPS": 46,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 2,
+      "n": 628,
+      "arm_n": 2513,
+      "percent": 24.990051730998807
+    },
+    {
+      "STFIPS": 46,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 3,
+      "n": 171,
+      "arm_n": 2513,
+      "percent": 6.804615996816554
+    },
+    {
+      "STFIPS": 46,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 4,
+      "n": 793,
+      "arm_n": 2513,
+      "percent": 31.55590927178671
+    },
+    {
+      "STFIPS": 46,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 5,
+      "n": 46,
+      "arm_n": 2513,
+      "percent": 1.8304814962196578
+    },
+    {
+      "STFIPS": 46,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 6,
+      "n": 3,
+      "arm_n": 2513,
+      "percent": 0.1193792280143255
+    },
+    {
+      "STFIPS": 46,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 7,
+      "n": 179,
+      "arm_n": 2513,
+      "percent": 7.122960604854756
+    },
+    {
+      "STFIPS": 49,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 1,
+      "n": 2236,
+      "arm_n": 5025,
+      "percent": 44.49751243781095
+    },
+    {
+      "STFIPS": 49,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 2,
+      "n": 1350,
+      "arm_n": 5025,
+      "percent": 26.865671641791046
+    },
+    {
+      "STFIPS": 49,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 3,
+      "n": 356,
+      "arm_n": 5025,
+      "percent": 7.08457711442786
+    },
+    {
+      "STFIPS": 49,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 4,
+      "n": 894,
+      "arm_n": 5025,
+      "percent": 17.791044776119403
+    },
+    {
+      "STFIPS": 49,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 5,
+      "n": 185,
+      "arm_n": 5025,
+      "percent": 3.681592039800995
+    },
+    {
+      "STFIPS": 49,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 7,
+      "n": 4,
+      "arm_n": 5025,
+      "percent": 0.07960199004975124
+    },
+    {
+      "STFIPS": 49,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 1,
+      "n": 683,
+      "arm_n": 2076,
+      "percent": 32.89980732177264
+    },
+    {
+      "STFIPS": 49,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 2,
+      "n": 466,
+      "arm_n": 2076,
+      "percent": 22.447013487475914
+    },
+    {
+      "STFIPS": 49,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 3,
+      "n": 181,
+      "arm_n": 2076,
+      "percent": 8.71868978805395
+    },
+    {
+      "STFIPS": 49,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 4,
+      "n": 657,
+      "arm_n": 2076,
+      "percent": 31.647398843930635
+    },
+    {
+      "STFIPS": 49,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 5,
+      "n": 86,
+      "arm_n": 2076,
+      "percent": 4.142581888246628
+    },
+    {
+      "STFIPS": 49,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 7,
+      "n": 3,
+      "arm_n": 2076,
+      "percent": 0.14450867052023122
+    },
+    {
+      "STFIPS": 49,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 1,
+      "n": 2531,
+      "arm_n": 5700,
+      "percent": 44.40350877192982
+    },
+    {
+      "STFIPS": 49,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 2,
+      "n": 1448,
+      "arm_n": 5700,
+      "percent": 25.403508771929825
+    },
+    {
+      "STFIPS": 49,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 3,
+      "n": 545,
+      "arm_n": 5700,
+      "percent": 9.56140350877193
+    },
+    {
+      "STFIPS": 49,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 4,
+      "n": 958,
+      "arm_n": 5700,
+      "percent": 16.80701754385965
+    },
+    {
+      "STFIPS": 49,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 5,
+      "n": 200,
+      "arm_n": 5700,
+      "percent": 3.508771929824561
+    },
+    {
+      "STFIPS": 49,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 6,
+      "n": 7,
+      "arm_n": 5700,
+      "percent": 0.12280701754385964
+    },
+    {
+      "STFIPS": 49,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 7,
+      "n": 11,
+      "arm_n": 5700,
+      "percent": 0.19298245614035087
+    },
+    {
+      "STFIPS": 49,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 1,
+      "n": 734,
+      "arm_n": 2231,
+      "percent": 32.90004482294935
+    },
+    {
+      "STFIPS": 49,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 2,
+      "n": 385,
+      "arm_n": 2231,
+      "percent": 17.256835499775885
+    },
+    {
+      "STFIPS": 49,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 3,
+      "n": 275,
+      "arm_n": 2231,
+      "percent": 12.32631107126849
+    },
+    {
+      "STFIPS": 49,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 4,
+      "n": 745,
+      "arm_n": 2231,
+      "percent": 33.39309726580009
+    },
+    {
+      "STFIPS": 49,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 5,
+      "n": 82,
+      "arm_n": 2231,
+      "percent": 3.6754818467055133
+    },
+    {
+      "STFIPS": 49,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 6,
+      "n": 3,
+      "arm_n": 2231,
+      "percent": 0.1344688480502017
+    },
+    {
+      "STFIPS": 49,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 7,
+      "n": 7,
+      "arm_n": 2231,
+      "percent": 0.31376064545047067
+    },
+    {
+      "STFIPS": 56,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 1,
+      "n": 690,
+      "arm_n": 1245,
+      "percent": 55.42168674698795
+    },
+    {
+      "STFIPS": 56,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 2,
+      "n": 210,
+      "arm_n": 1245,
+      "percent": 16.867469879518072
+    },
+    {
+      "STFIPS": 56,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 3,
+      "n": 5,
+      "arm_n": 1245,
+      "percent": 0.40160642570281124
+    },
+    {
+      "STFIPS": 56,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 4,
+      "n": 133,
+      "arm_n": 1245,
+      "percent": 10.682730923694779
+    },
+    {
+      "STFIPS": 56,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 5,
+      "n": 30,
+      "arm_n": 1245,
+      "percent": 2.4096385542168677
+    },
+    {
+      "STFIPS": 56,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 6,
+      "n": 6,
+      "arm_n": 1245,
+      "percent": 0.4819277108433735
+    },
+    {
+      "STFIPS": 56,
+      "DISYR": 2022,
+      "treatment": 0,
+      "REASON": 7,
+      "n": 171,
+      "arm_n": 1245,
+      "percent": 13.734939759036145
+    },
+    {
+      "STFIPS": 56,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 1,
+      "n": 451,
+      "arm_n": 1065,
+      "percent": 42.347417840375584
+    },
+    {
+      "STFIPS": 56,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 2,
+      "n": 190,
+      "arm_n": 1065,
+      "percent": 17.84037558685446
+    },
+    {
+      "STFIPS": 56,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 3,
+      "n": 8,
+      "arm_n": 1065,
+      "percent": 0.7511737089201878
+    },
+    {
+      "STFIPS": 56,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 4,
+      "n": 207,
+      "arm_n": 1065,
+      "percent": 19.43661971830986
+    },
+    {
+      "STFIPS": 56,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 5,
+      "n": 38,
+      "arm_n": 1065,
+      "percent": 3.568075117370892
+    },
+    {
+      "STFIPS": 56,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 6,
+      "n": 5,
+      "arm_n": 1065,
+      "percent": 0.4694835680751174
+    },
+    {
+      "STFIPS": 56,
+      "DISYR": 2022,
+      "treatment": 1,
+      "REASON": 7,
+      "n": 166,
+      "arm_n": 1065,
+      "percent": 15.586854460093896
+    },
+    {
+      "STFIPS": 56,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 1,
+      "n": 610,
+      "arm_n": 1225,
+      "percent": 49.795918367346935
+    },
+    {
+      "STFIPS": 56,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 2,
+      "n": 183,
+      "arm_n": 1225,
+      "percent": 14.938775510204081
+    },
+    {
+      "STFIPS": 56,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 3,
+      "n": 11,
+      "arm_n": 1225,
+      "percent": 0.8979591836734694
+    },
+    {
+      "STFIPS": 56,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 4,
+      "n": 249,
+      "arm_n": 1225,
+      "percent": 20.3265306122449
+    },
+    {
+      "STFIPS": 56,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 5,
+      "n": 47,
+      "arm_n": 1225,
+      "percent": 3.836734693877551
+    },
+    {
+      "STFIPS": 56,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 6,
+      "n": 5,
+      "arm_n": 1225,
+      "percent": 0.40816326530612246
+    },
+    {
+      "STFIPS": 56,
+      "DISYR": 2023,
+      "treatment": 0,
+      "REASON": 7,
+      "n": 120,
+      "arm_n": 1225,
+      "percent": 9.795918367346939
+    },
+    {
+      "STFIPS": 56,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 1,
+      "n": 425,
+      "arm_n": 1149,
+      "percent": 36.98868581375109
+    },
+    {
+      "STFIPS": 56,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 2,
+      "n": 247,
+      "arm_n": 1149,
+      "percent": 21.496953872932984
+    },
+    {
+      "STFIPS": 56,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 3,
+      "n": 10,
+      "arm_n": 1149,
+      "percent": 0.8703220191470844
+    },
+    {
+      "STFIPS": 56,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 4,
+      "n": 259,
+      "arm_n": 1149,
+      "percent": 22.541340295909485
+    },
+    {
+      "STFIPS": 56,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 5,
+      "n": 88,
+      "arm_n": 1149,
+      "percent": 7.658833768494343
+    },
+    {
+      "STFIPS": 56,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 6,
+      "n": 9,
+      "arm_n": 1149,
+      "percent": 0.783289817232376
+    },
+    {
+      "STFIPS": 56,
+      "DISYR": 2023,
+      "treatment": 1,
+      "REASON": 7,
+      "n": 111,
+      "arm_n": 1149,
+      "percent": 9.660574412532638
+    }
+  ],
+  "predefined_coding_sensitivity_states": [
+    17,
+    29
+  ],
+  "coding_sensitivity_note": "2022 crosswalk flags motivate these checks; 2023 mapping and causes of observed changes remain unknown",
+  "readiness_audit": {
+    "state_year_all_missing_adjustment_fields": [],
+    "frequency_target_n": 220401,
+    "frequency_observed_n": 152566,
+    "frequency_availability_by_state_year_arm": [
+      {
+        "STFIPS": 1,
+        "DISYR": 2022,
+        "treatment": 0,
+        "sum": 1958,
+        "count": 2690,
+        "percent": 72.78810408921933
+      },
+      {
+        "STFIPS": 1,
+        "DISYR": 2022,
+        "treatment": 1,
+        "sum": 760,
+        "count": 1004,
+        "percent": 75.69721115537848
+      },
+      {
+        "STFIPS": 1,
+        "DISYR": 2023,
+        "treatment": 0,
+        "sum": 2152,
+        "count": 2969,
+        "percent": 72.48231727854497
+      },
+      {
+        "STFIPS": 1,
+        "DISYR": 2023,
+        "treatment": 1,
+        "sum": 908,
+        "count": 1145,
+        "percent": 79.30131004366812
+      },
+      {
+        "STFIPS": 5,
+        "DISYR": 2022,
+        "treatment": 0,
+        "sum": 1775,
+        "count": 1796,
+        "percent": 98.83073496659243
+      },
+      {
+        "STFIPS": 5,
+        "DISYR": 2022,
+        "treatment": 1,
+        "sum": 1019,
+        "count": 1021,
+        "percent": 99.80411361410383
+      },
+      {
+        "STFIPS": 5,
+        "DISYR": 2023,
+        "treatment": 0,
+        "sum": 2049,
+        "count": 2078,
+        "percent": 98.60442733397498
+      },
+      {
+        "STFIPS": 5,
+        "DISYR": 2023,
+        "treatment": 1,
+        "sum": 1032,
+        "count": 1037,
+        "percent": 99.51783992285439
+      },
+      {
+        "STFIPS": 8,
+        "DISYR": 2022,
+        "treatment": 0,
+        "sum": 9378,
+        "count": 9503,
+        "percent": 98.68462590760812
+      },
+      {
+        "STFIPS": 8,
+        "DISYR": 2022,
+        "treatment": 1,
+        "sum": 3539,
+        "count": 3551,
+        "percent": 99.6620670233737
+      },
+      {
+        "STFIPS": 8,
+        "DISYR": 2023,
+        "treatment": 0,
+        "sum": 1811,
+        "count": 1856,
+        "percent": 97.57543103448276
+      },
+      {
+        "STFIPS": 8,
+        "DISYR": 2023,
+        "treatment": 1,
+        "sum": 1198,
+        "count": 1204,
+        "percent": 99.5016611295681
+      },
+      {
+        "STFIPS": 9,
+        "DISYR": 2022,
+        "treatment": 0,
+        "sum": 9339,
+        "count": 10011,
+        "percent": 93.2873838777345
+      },
+      {
+        "STFIPS": 9,
+        "DISYR": 2022,
+        "treatment": 1,
+        "sum": 2961,
+        "count": 3220,
+        "percent": 91.95652173913044
+      },
+      {
+        "STFIPS": 9,
+        "DISYR": 2023,
+        "treatment": 0,
+        "sum": 8773,
+        "count": 9199,
+        "percent": 95.36906185454941
+      },
+      {
+        "STFIPS": 9,
+        "DISYR": 2023,
+        "treatment": 1,
+        "sum": 3159,
+        "count": 3293,
+        "percent": 95.93076222289706
+      },
+      {
+        "STFIPS": 13,
+        "DISYR": 2022,
+        "treatment": 0,
+        "sum": 9090,
+        "count": 10022,
+        "percent": 90.7004589902215
+      },
+      {
+        "STFIPS": 13,
+        "DISYR": 2022,
+        "treatment": 1,
+        "sum": 3864,
+        "count": 4160,
+        "percent": 92.88461538461539
+      },
+      {
+        "STFIPS": 13,
+        "DISYR": 2023,
+        "treatment": 0,
+        "sum": 8683,
+        "count": 9519,
+        "percent": 91.21756487025948
+      },
+      {
+        "STFIPS": 13,
+        "DISYR": 2023,
+        "treatment": 1,
+        "sum": 4069,
+        "count": 4317,
+        "percent": 94.25526986333102
+      },
+      {
+        "STFIPS": 15,
+        "DISYR": 2022,
+        "treatment": 0,
+        "sum": 685,
+        "count": 807,
+        "percent": 84.88228004956629
+      },
+      {
+        "STFIPS": 15,
+        "DISYR": 2022,
+        "treatment": 1,
+        "sum": 651,
+        "count": 946,
+        "percent": 68.81606765327696
+      },
+      {
+        "STFIPS": 15,
+        "DISYR": 2023,
+        "treatment": 0,
+        "sum": 728,
+        "count": 849,
+        "percent": 85.74793875147232
+      },
+      {
+        "STFIPS": 15,
+        "DISYR": 2023,
+        "treatment": 1,
+        "sum": 685,
+        "count": 924,
+        "percent": 74.13419913419914
+      },
+      {
+        "STFIPS": 17,
+        "DISYR": 2022,
+        "treatment": 0,
+        "sum": 1765,
+        "count": 1876,
+        "percent": 94.08315565031982
+      },
+      {
+        "STFIPS": 17,
+        "DISYR": 2022,
+        "treatment": 1,
+        "sum": 704,
+        "count": 739,
+        "percent": 95.26387009472259
+      },
+      {
+        "STFIPS": 17,
+        "DISYR": 2023,
+        "treatment": 0,
+        "sum": 5841,
+        "count": 6671,
+        "percent": 87.55808724329187
+      },
+      {
+        "STFIPS": 17,
+        "DISYR": 2023,
+        "treatment": 1,
+        "sum": 2567,
+        "count": 2759,
+        "percent": 93.04095686843058
+      },
+      {
+        "STFIPS": 29,
+        "DISYR": 2022,
+        "treatment": 0,
+        "sum": 4711,
+        "count": 6944,
+        "percent": 67.84274193548387
+      },
+      {
+        "STFIPS": 29,
+        "DISYR": 2022,
+        "treatment": 1,
+        "sum": 6273,
+        "count": 11189,
+        "percent": 56.06399142014479
+      },
+      {
+        "STFIPS": 29,
+        "DISYR": 2023,
+        "treatment": 0,
+        "sum": 1993,
+        "count": 4357,
+        "percent": 45.74248336011017
+      },
+      {
+        "STFIPS": 29,
+        "DISYR": 2023,
+        "treatment": 1,
+        "sum": 2738,
+        "count": 5065,
+        "percent": 54.05725567620928
+      },
+      {
+        "STFIPS": 34,
+        "DISYR": 2022,
+        "treatment": 0,
+        "sum": 5581,
+        "count": 16394,
+        "percent": 34.04294253995364
+      },
+      {
+        "STFIPS": 34,
+        "DISYR": 2022,
+        "treatment": 1,
+        "sum": 3265,
+        "count": 12586,
+        "percent": 25.941522326394406
+      },
+      {
+        "STFIPS": 34,
+        "DISYR": 2023,
+        "treatment": 0,
+        "sum": 5718,
+        "count": 16629,
+        "percent": 34.38571170846112
+      },
+      {
+        "STFIPS": 34,
+        "DISYR": 2023,
+        "treatment": 1,
+        "sum": 3146,
+        "count": 12377,
+        "percent": 25.41811424416256
+      },
+      {
+        "STFIPS": 39,
+        "DISYR": 2022,
+        "treatment": 0,
+        "sum": 1491,
+        "count": 2492,
+        "percent": 59.831460674157306
+      },
+      {
+        "STFIPS": 39,
+        "DISYR": 2022,
+        "treatment": 1,
+        "sum": 983,
+        "count": 1420,
+        "percent": 69.22535211267606
+      },
+      {
+        "STFIPS": 39,
+        "DISYR": 2023,
+        "treatment": 0,
+        "sum": 1368,
+        "count": 2410,
+        "percent": 56.76348547717842
+      },
+      {
+        "STFIPS": 39,
+        "DISYR": 2023,
+        "treatment": 1,
+        "sum": 1001,
+        "count": 1422,
+        "percent": 70.39381153305204
+      },
+      {
+        "STFIPS": 42,
+        "DISYR": 2022,
+        "treatment": 0,
+        "sum": 2852,
+        "count": 4613,
+        "percent": 61.82527639280295
+      },
+      {
+        "STFIPS": 42,
+        "DISYR": 2022,
+        "treatment": 1,
+        "sum": 876,
+        "count": 1463,
+        "percent": 59.87696514012303
+      },
+      {
+        "STFIPS": 42,
+        "DISYR": 2023,
+        "treatment": 0,
+        "sum": 2838,
+        "count": 4415,
+        "percent": 64.28086070215176
+      },
+      {
+        "STFIPS": 42,
+        "DISYR": 2023,
+        "treatment": 1,
+        "sum": 880,
+        "count": 1452,
+        "percent": 60.60606060606061
+      },
+      {
+        "STFIPS": 46,
+        "DISYR": 2022,
+        "treatment": 0,
+        "sum": 937,
+        "count": 959,
+        "percent": 97.70594369134515
+      },
+      {
+        "STFIPS": 46,
+        "DISYR": 2022,
+        "treatment": 1,
+        "sum": 926,
+        "count": 946,
+        "percent": 97.88583509513742
+      },
+      {
+        "STFIPS": 46,
+        "DISYR": 2023,
+        "treatment": 0,
+        "sum": 1099,
+        "count": 1125,
+        "percent": 97.68888888888888
+      },
+      {
+        "STFIPS": 46,
+        "DISYR": 2023,
+        "treatment": 1,
+        "sum": 961,
+        "count": 984,
+        "percent": 97.66260162601625
+      },
+      {
+        "STFIPS": 49,
+        "DISYR": 2022,
+        "treatment": 0,
+        "sum": 3332,
+        "count": 3414,
+        "percent": 97.59812536613943
+      },
+      {
+        "STFIPS": 49,
+        "DISYR": 2022,
+        "treatment": 1,
+        "sum": 1410,
+        "count": 1446,
+        "percent": 97.5103734439834
+      },
+      {
+        "STFIPS": 49,
+        "DISYR": 2023,
+        "treatment": 0,
+        "sum": 3894,
+        "count": 3955,
+        "percent": 98.45764854614413
+      },
+      {
+        "STFIPS": 49,
+        "DISYR": 2023,
+        "treatment": 1,
+        "sum": 1468,
+        "count": 1481,
+        "percent": 99.12221471978393
+      },
+      {
+        "STFIPS": 56,
+        "DISYR": 2022,
+        "treatment": 0,
+        "sum": 466,
+        "count": 472,
+        "percent": 98.72881355932203
+      },
+      {
+        "STFIPS": 56,
+        "DISYR": 2022,
+        "treatment": 1,
+        "sum": 438,
+        "count": 440,
+        "percent": 99.54545454545455
+      },
+      {
+        "STFIPS": 56,
+        "DISYR": 2023,
+        "treatment": 0,
+        "sum": 377,
+        "count": 382,
+        "percent": 98.69109947643979
+      },
+      {
+        "STFIPS": 56,
+        "DISYR": 2023,
+        "treatment": 1,
+        "sum": 401,
+        "count": 403,
+        "percent": 99.50372208436724
+      }
+    ],
+    "frequency_membership_sha256": "e3bb7a35e1584181fdde641946a063a7abd4f6c1b0a1d8257f0aeabc0907a24b",
+    "interpretation": "Differential frequency observation remains a design issue; no sample rules changed by this review"
+  }
+}

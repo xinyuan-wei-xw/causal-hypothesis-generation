@@ -1,0 +1,679 @@
+{
+  "status": "candidate_membership_and_four_imputation_draws_verified_overlap_review_required",
+  "treatment": "SERVICES=6 intensive versus SERVICES=7 non-intensive outpatient",
+  "years": [
+    2022,
+    2023
+  ],
+  "states": {
+    "AL": 1,
+    "AR": 5,
+    "CO": 8,
+    "CT": 9,
+    "GA": 13,
+    "HI": 15,
+    "IL": 17,
+    "MO": 29,
+    "NJ": 34,
+    "OH": 39,
+    "PA": 42,
+    "SD": 46,
+    "UT": 49,
+    "WY": 56
+  },
+  "analysis_role": "primary_14_state",
+  "excluded_states": {
+    "IN": 18,
+    "TX": 48
+  },
+  "selection_reason": "State source files do not collect PRIMINC in IN or PSYPROB in TX; the 16-state run is retained as sensitivity",
+  "source_hashes": {
+    "data/interim/csv/tedsd_puf_2022.csv": "c254c53fb9ae6fbdce9b2ad3d1f31c246d2386d6093f71160149fd04216518b9",
+    "data/interim/csv/tedsd_puf_2023.csv": "8073f862775c60e538ff0a607bd521339d1eca9189e1f454f60ef3948f9faf63"
+  },
+  "raw_counts": [
+    {
+      "year": 2022,
+      "public_discharge_rows": 1394138,
+      "selected_outpatient_episodes": 203532
+    },
+    {
+      "year": 2023,
+      "public_discharge_rows": 1474025,
+      "selected_outpatient_episodes": 182750
+    }
+  ],
+  "initial_state_year_minimum_arm_n": 1065,
+  "initial_state_year_prevalence_range": [
+    0.20552219015677403,
+    0.6108146567057986
+  ],
+  "samples": [
+    {
+      "outcome": "completion",
+      "n": 386282,
+      "comparison_n": 255239,
+      "intensive_n": 131043,
+      "complete_case_n": 244730,
+      "membership_sha256": "de0dfe5d0581975710dc6993a8d70b4b0da94fc02f52b9aab679446628d57c0d"
+    },
+    {
+      "outcome": "frequency",
+      "n": 152566,
+      "comparison_n": 100684,
+      "intensive_n": 51882,
+      "complete_case_n": 87246,
+      "membership_sha256": "e3bb7a35e1584181fdde641946a063a7abd4f6c1b0a1d8257f0aeabc0907a24b"
+    }
+  ],
+  "outcome_availability": [
+    {
+      "outcome": "completion",
+      "arm": 0,
+      "target_n": 255239,
+      "observed_n": 255239
+    },
+    {
+      "outcome": "completion",
+      "arm": 1,
+      "target_n": 131043,
+      "observed_n": 131043
+    },
+    {
+      "outcome": "frequency",
+      "arm": 0,
+      "target_n": 138407,
+      "observed_n": 100684
+    },
+    {
+      "outcome": "frequency",
+      "arm": 1,
+      "target_n": 81994,
+      "observed_n": 51882
+    }
+  ],
+  "diagnostic_specification": "five-fold cross-fitted categorical logistic C=1 with joint state-year interactions; overlap weights; missing category before imputation",
+  "pre_imputation_diagnostics": {
+    "pooled": [
+      {
+        "outcome": "completion",
+        "n": 386282,
+        "outside_005_095_percent": 9.426791825661047,
+        "max_weighted_smd": 0.0008718936606286683,
+        "comparison_ess": 166439.84999552582,
+        "intensive_ess": 109948.81798010178,
+        "fold_iterations": [
+          1203,
+          1383,
+          1238,
+          1276,
+          1300
+        ]
+      },
+      {
+        "outcome": "frequency",
+        "n": 152566,
+        "outside_005_095_percent": 10.619666242806392,
+        "max_weighted_smd": 0.003874903556679067,
+        "comparison_ess": 61429.84829242246,
+        "intensive_ess": 40888.321670330144,
+        "fold_iterations": [
+          963,
+          973,
+          1079,
+          1035,
+          893
+        ]
+      }
+    ],
+    "by_year": [
+      {
+        "outcome": "completion",
+        "year": 2022,
+        "n": 203532,
+        "outside_005_095_percent": 9.706090442780496,
+        "max_weighted_smd": 0.004492219604149588,
+        "minimum_arm_ess_share": 0.6403500058006075
+      },
+      {
+        "outcome": "completion",
+        "year": 2023,
+        "n": 182750,
+        "outside_005_095_percent": 9.115731874145007,
+        "max_weighted_smd": 0.0030613626974687383,
+        "minimum_arm_ess_share": 0.6658418124339835
+      },
+      {
+        "outcome": "frequency",
+        "year": 2022,
+        "n": 81029,
+        "outside_005_095_percent": 11.109602734823335,
+        "max_weighted_smd": 0.00725684643205304,
+        "minimum_arm_ess_share": 0.5971648536799485
+      },
+      {
+        "outcome": "frequency",
+        "year": 2023,
+        "n": 71537,
+        "outside_005_095_percent": 10.064721752379887,
+        "max_weighted_smd": 0.004949719391181903,
+        "minimum_arm_ess_share": 0.6249305074115995
+      }
+    ],
+    "local": [
+      {
+        "outcome": "completion",
+        "state": 1,
+        "year": 2022,
+        "n": 6685,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 1582.3273301874624
+      },
+      {
+        "outcome": "completion",
+        "state": 1,
+        "year": 2023,
+        "n": 7605,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 1823.6034085721972
+      },
+      {
+        "outcome": "completion",
+        "state": 5,
+        "year": 2022,
+        "n": 4285,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 569.8670064590505
+      },
+      {
+        "outcome": "completion",
+        "state": 5,
+        "year": 2023,
+        "n": 4616,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 462.1707007439206
+      },
+      {
+        "outcome": "completion",
+        "state": 8,
+        "year": 2022,
+        "n": 23986,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 4353.429418035253
+      },
+      {
+        "outcome": "completion",
+        "state": 8,
+        "year": 2023,
+        "n": 6060,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 1220.8735186388258
+      },
+      {
+        "outcome": "completion",
+        "state": 9,
+        "year": 2022,
+        "n": 25642,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 5009.885973440842
+      },
+      {
+        "outcome": "completion",
+        "state": 9,
+        "year": 2023,
+        "n": 24081,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 5093.31446912292
+      },
+      {
+        "outcome": "completion",
+        "state": 13,
+        "year": 2022,
+        "n": 22861,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 3948.426807886654
+      },
+      {
+        "outcome": "completion",
+        "state": 13,
+        "year": 2023,
+        "n": 21822,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 3892.2755085082936
+      },
+      {
+        "outcome": "completion",
+        "state": 15,
+        "year": 2022,
+        "n": 2811,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 549.021311948818
+      },
+      {
+        "outcome": "completion",
+        "state": 15,
+        "year": 2023,
+        "n": 3035,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 703.7647337486819
+      },
+      {
+        "outcome": "completion",
+        "state": 17,
+        "year": 2022,
+        "n": 7236,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 1926.6269850647711
+      },
+      {
+        "outcome": "completion",
+        "state": 17,
+        "year": 2023,
+        "n": 18443,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 4925.722520203363
+      },
+      {
+        "outcome": "completion",
+        "state": 29,
+        "year": 2022,
+        "n": 32283,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 12716.605126427603
+      },
+      {
+        "outcome": "completion",
+        "state": 29,
+        "year": 2023,
+        "n": 16945,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 7323.347422955557
+      },
+      {
+        "outcome": "completion",
+        "state": 34,
+        "year": 2022,
+        "n": 45426,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 16958.840390857848
+      },
+      {
+        "outcome": "completion",
+        "state": 34,
+        "year": 2023,
+        "n": 45637,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 16576.105862507622
+      },
+      {
+        "outcome": "completion",
+        "state": 39,
+        "year": 2022,
+        "n": 7074,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 2135.149048749328
+      },
+      {
+        "outcome": "completion",
+        "state": 39,
+        "year": 2023,
+        "n": 7325,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 2144.4650721134617
+      },
+      {
+        "outcome": "completion",
+        "state": 42,
+        "year": 2022,
+        "n": 9722,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 2134.4477069731597
+      },
+      {
+        "outcome": "completion",
+        "state": 42,
+        "year": 2023,
+        "n": 9591,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 1967.187470592746
+      },
+      {
+        "outcome": "completion",
+        "state": 46,
+        "year": 2022,
+        "n": 6110,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 1975.5524763103617
+      },
+      {
+        "outcome": "completion",
+        "state": 46,
+        "year": 2023,
+        "n": 7285,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 2315.944973853255
+      },
+      {
+        "outcome": "completion",
+        "state": 49,
+        "year": 2022,
+        "n": 7101,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 1870.763834864899
+      },
+      {
+        "outcome": "completion",
+        "state": 49,
+        "year": 2023,
+        "n": 7931,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 1994.5553959988918
+      },
+      {
+        "outcome": "completion",
+        "state": 56,
+        "year": 2022,
+        "n": 2310,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 948.5337242843062
+      },
+      {
+        "outcome": "completion",
+        "state": 56,
+        "year": 2023,
+        "n": 2374,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 1023.7825105748959
+      },
+      {
+        "outcome": "frequency",
+        "state": 1,
+        "year": 2022,
+        "n": 2718,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 666.18215626902
+      },
+      {
+        "outcome": "frequency",
+        "state": 1,
+        "year": 2023,
+        "n": 3060,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 812.1470341585662
+      },
+      {
+        "outcome": "frequency",
+        "state": 5,
+        "year": 2022,
+        "n": 2794,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 409.8633616842048
+      },
+      {
+        "outcome": "frequency",
+        "state": 5,
+        "year": 2023,
+        "n": 3081,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 334.56049180124927
+      },
+      {
+        "outcome": "frequency",
+        "state": 8,
+        "year": 2022,
+        "n": 12917,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 2601.125229837724
+      },
+      {
+        "outcome": "frequency",
+        "state": 8,
+        "year": 2023,
+        "n": 3009,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 611.2967526524341
+      },
+      {
+        "outcome": "frequency",
+        "state": 9,
+        "year": 2022,
+        "n": 12300,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 2729.800883834932
+      },
+      {
+        "outcome": "frequency",
+        "state": 9,
+        "year": 2023,
+        "n": 11932,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 2930.414243308362
+      },
+      {
+        "outcome": "frequency",
+        "state": 13,
+        "year": 2022,
+        "n": 12954,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 2987.486275584053
+      },
+      {
+        "outcome": "frequency",
+        "state": 13,
+        "year": 2023,
+        "n": 12752,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 3150.7258291175453
+      },
+      {
+        "outcome": "frequency",
+        "state": 15,
+        "year": 2022,
+        "n": 1336,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 245.87822830419688
+      },
+      {
+        "outcome": "frequency",
+        "state": 15,
+        "year": 2023,
+        "n": 1413,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 314.6241812750855
+      },
+      {
+        "outcome": "frequency",
+        "state": 17,
+        "year": 2022,
+        "n": 2469,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 645.5071650824482
+      },
+      {
+        "outcome": "frequency",
+        "state": 17,
+        "year": 2023,
+        "n": 8408,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 2366.7594057780766
+      },
+      {
+        "outcome": "frequency",
+        "state": 29,
+        "year": 2022,
+        "n": 10984,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 3955.3228310175136
+      },
+      {
+        "outcome": "frequency",
+        "state": 29,
+        "year": 2023,
+        "n": 4731,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 1727.3717328538385
+      },
+      {
+        "outcome": "frequency",
+        "state": 34,
+        "year": 2022,
+        "n": 8846,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 2881.4475583886897
+      },
+      {
+        "outcome": "frequency",
+        "state": 34,
+        "year": 2023,
+        "n": 8864,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 2734.761452897891
+      },
+      {
+        "outcome": "frequency",
+        "state": 39,
+        "year": 2022,
+        "n": 2474,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 768.025615677453
+      },
+      {
+        "outcome": "frequency",
+        "state": 39,
+        "year": 2023,
+        "n": 2369,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 761.2596279800575
+      },
+      {
+        "outcome": "frequency",
+        "state": 42,
+        "year": 2022,
+        "n": 3728,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 791.1864430614526
+      },
+      {
+        "outcome": "frequency",
+        "state": 42,
+        "year": 2023,
+        "n": 3718,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 783.0915135273358
+      },
+      {
+        "outcome": "frequency",
+        "state": 46,
+        "year": 2022,
+        "n": 1863,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 783.6566612931949
+      },
+      {
+        "outcome": "frequency",
+        "state": 46,
+        "year": 2023,
+        "n": 2060,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 850.5075283649877
+      },
+      {
+        "outcome": "frequency",
+        "state": 49,
+        "year": 2022,
+        "n": 4742,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 1219.5039451329444
+      },
+      {
+        "outcome": "frequency",
+        "state": 49,
+        "year": 2023,
+        "n": 5362,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 1249.8766799442803
+      },
+      {
+        "outcome": "frequency",
+        "state": 56,
+        "year": 2022,
+        "n": 904,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 372.63535384595707
+      },
+      {
+        "outcome": "frequency",
+        "state": 56,
+        "year": 2023,
+        "n": 778,
+        "flagged_categories": 0,
+        "minimum_arm_ess": 318.49206423921777
+      }
+    ],
+    "score_tail_threshold_percent": 10,
+    "score_tail_gate_passed": false
+  },
+  "imputation": {
+    "runs": {
+      "completion": [
+        722
+      ],
+      "frequency": [
+        720
+      ]
+    },
+    "chains_per_seed": 2,
+    "iterations_per_chain": 10,
+    "draws": [
+      {
+        "outcome": "completion",
+        "seed": 722,
+        "chain": 1,
+        "file": "completion_imputation_seed722/engineering_imputation_chain_1.csv.gz",
+        "n": 386282,
+        "sha256": "ea2341fa827b1c67139d289393ce5937e79c8a934554e7a4adaa46067f8136d1"
+      },
+      {
+        "outcome": "completion",
+        "seed": 722,
+        "chain": 2,
+        "file": "completion_imputation_seed722/engineering_imputation_chain_2.csv.gz",
+        "n": 386282,
+        "sha256": "3232742389a33828fdebab7d906bd83a01a757c040da657c6a06bd035673663f"
+      },
+      {
+        "outcome": "frequency",
+        "seed": 720,
+        "chain": 1,
+        "file": "frequency_imputation_seed720/engineering_imputation_chain_1.csv.gz",
+        "n": 152566,
+        "sha256": "ec7c7315d0035c8ae172c6c329679c767e7e7601181719238be0144dc7bdc18f"
+      },
+      {
+        "outcome": "frequency",
+        "seed": 720,
+        "chain": 2,
+        "file": "frequency_imputation_seed720/engineering_imputation_chain_2.csv.gz",
+        "n": 152566,
+        "sha256": "cff7437c630b224310f2fb1bb3fb8df1c6ae68448dc4003fc94e7a45321cc383"
+      }
+    ],
+    "role": "validation draws; inferential MI count and convergence remain pending"
+  },
+  "propensity_figures": [
+    {
+      "outcome": "completion",
+      "file": "completion_propensity_eligible_draw1.png",
+      "source_draw": "completion_imputation_seed722/engineering_imputation_chain_1.csv.gz",
+      "n": 386282,
+      "sha256": "3125c3a8f5724e39819043753523a023d55181582fdd0233f4386a0c4a9bd7e5"
+    },
+    {
+      "outcome": "frequency",
+      "file": "frequency_propensity_eligible_draw1.png",
+      "source_draw": "frequency_imputation_seed720/engineering_imputation_chain_1.csv.gz",
+      "n": 152566,
+      "sha256": "9677a3ce9a85605aa7bfb71f09a20538db815519cf2dd2f1c4449bcc8c236e54"
+    }
+  ]
+}

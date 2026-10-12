@@ -8,8 +8,8 @@ The workflow makes each candidate traceable to its empirical motivation and eval
 The framework has four stages: Causal Analysis of Observational Data, Translation of Causal Estimates, Candidate Hypothesis Generation, and Candidate Hypothesis Evaluation and Prioritization.
 The empirical application examines recorded treatment completion in substance use treatment, comparing long-term with short-term residential care and intensive with non-intensive outpatient care.
 
-**Release status:** This repository currently provides the project overview.
-The replication code and research outputs are being prepared for public release.
+**Release status:** This private repository contains the October 11 replication code and prepared inputs for collaborator review.
+Saved Stage 1–4 result folders are not included in this snapshot.
 
 [Workflow](#what-each-stage-contributes) · [Evaluation](#how-hypotheses-are-evaluated) · [Replication](#replication-package) · [Questions](#questions-and-contributions)
 
@@ -61,8 +61,7 @@ Policy-tree splits motivate subgroup hypotheses, while claims about moderation r
 
 ## Replication package
 
-The local release is organized as follows.
-These folders will become available when the code is uploaded.
+The replication package is organized as follows.
 
 | Folder | Contents |
 | :--- | :--- |
@@ -83,7 +82,10 @@ The Stage 3 configuration also supports Claude through its command-line interfac
 Stage 4 requires a frozen literature corpus and its accompanying run configuration.
 Model outputs can vary across reruns.
 
-Data-access instructions, verified execution commands, and available saved outputs will accompany the code release.
+Run the stage notebooks in order after configuring their inputs and model services.
+The current Stage 4 default points to a saved literature corpus that is absent from this snapshot; it also requires the corresponding run configuration.
+The Web of Science exports are included for private collaborator review.
+A complete rerun of this packaged snapshot has not yet been verified.
 
 ## Questions and contributions
 

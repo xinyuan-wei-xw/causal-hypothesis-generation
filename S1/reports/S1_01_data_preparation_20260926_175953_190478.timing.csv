@@ -1,0 +1,12 @@
+stage,seconds
+Read and harmonize public CSVs,4.865633124951273
+"Derive outcomes, apply fixed rules and verify exact reconstruction",1.9456745000788942
+Refit propensity models for both outcomes,75.38684645795729
+Verify balance and support; plot overlap,2.484154333011247
+Save and reload final samples,18.818509459029883
+Run constrained chained-imputation validation,2355.6091862499015
+Run constrained chained-imputation validation,1405.696251333109
+Run constrained chained-imputation validation,1394.3151211249642
+Verify six draw files and update manifest,0.351445582928136
+Verify fixed eligible membership and export propensity figures,0.9036036250181496
+Total elapsed,5260.376427707961

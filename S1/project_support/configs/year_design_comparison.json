@@ -1,0 +1,110 @@
+{
+  "status": "three_design_comparison_authorized; model_integration_pending",
+  "treatment": "los_gt30",
+  "outcomes": [
+    "completion_original",
+    "same_substance_frequency_reduction"
+  ],
+  "sample_pointer": "data/processed/YEAR_SAMPLES_LATEST.json",
+  "population_flag": "in_approved_year_candidate_pool",
+  "designs": [
+    {
+      "id": "2023_only",
+      "development_years": [
+        2023
+      ],
+      "evaluation": "Independent reserved 2023 episodes",
+      "question": "What treatment-effect patterns are supported within the 2023 reporting population?"
+    },
+    {
+      "id": "pooled_2022_2023",
+      "development_years": [
+        2022,
+        2023
+      ],
+      "evaluation": "Independent reserved episodes from both years; also report by year",
+      "year_role": "Categorical adjustment variable; assess discharge-year timing and coverage limitations",
+      "question": "What treatment-effect patterns characterize the combined reporting population after year adjustment?"
+    },
+    {
+      "id": "2022_to_2023",
+      "development_years": [
+        2022
+      ],
+      "evaluation": "Freeze 2022 rules and analysis settings before evaluating those rules in 2023",
+      "question": "Do the groups identified in 2022 retain similar estimated treatment effects in 2023?"
+    }
+  ],
+  "comparison_rules": [
+    "Apply both outcomes to every design and retain the same treatment definition.",
+    "Preserve existing 2022 partition assignments. Freeze new 2023 assignments before model selection.",
+    "Do not select a design using statistical significance or the number of significant leaves.",
+    "Keep population coverage, sample-size differences, and year differences distinguishable in reporting.",
+    "2023 is used for development in two designs; it is not an untouched project-wide validation set.",
+    "Freeze the temporal-design rules independently of the 2023-developed designs.",
+    "Forest honesty is not a substitute for independent evaluation of selected policy-tree groups.",
+    "Exported rows are not yet validated imputed model inputs; an input audit is not a fitted analysis."
+  ],
+  "execution_order": {
+    "approved": "Retain imputed main analysis; run complete-case sensitivity first",
+    "complete_case_runner": "notebooks/S1/helpers/run_three_design_complete_cases.py",
+    "local_frozen_rule_evaluation": "notebooks/S1/helpers/evaluate_frozen_trees_crossfit.py",
+    "progress_pointer": "outputs/logs/THREE_DESIGN_CC_LATEST.json",
+    "imputation_status": "cached categorical adapter validation in progress; production inference incomplete",
+    "pending_question": null,
+    "cart_primary_evaluation": "User approved evaluating CART as a possible primary method; adoption remains contingent on quality, constraints and inferential validation.",
+    "screening_comparison": {
+      "status": "completed; retention_approved_as_next_validation_candidate",
+      "approval": "User agreed to compare options 1 and 2 on identical training episodes.",
+      "protocol": "two screening settings; same 20000 training episodes, seed42, initialization, two imputations, one iteration and penalty .01; both outcomes",
+      "limits": "eps=0 disables all per-update remove.lindep screening, not exclusively rare-category screening. First gate measures numerical feasibility and distribution changes, not masked reconstruction accuracy or final inference.",
+      "pointer": "outputs/logs/SCREENING_COMPARISON_LATEST.json",
+      "next_candidate": "Explicit retention approved for imputation/inference validation; automatic screening retained as comparison. No production adoption."
+    },
+    "inference_validation": "Small known-effect synthetic execution pilot; not validation of state-clustered MI or tree inference"
+  },
+  "cart_evaluation_evidence": {
+    "status": "not_adopted",
+    "reconstruction_run": "outputs/tables/imputation_method_comparison_20260916T093403333515Z",
+    "constraint_check": "outputs/tables/new_input_imputation_validation_20260916T094208357577Z",
+    "finding": "Both reconstruction comparisons completed. Categorical regression had lower average Brier scores across nine targets in each outcome sample. Constrained CART failed for 15 additional-substance cells; no fallback. Neither result validates primary MI inference.",
+    "main_analysis": "Imputed requirement retained; no main-method adoption from this check."
+  },
+  "reference_tree_across_imputations": {
+    "status": "user_approved_architecture_implementation_in_progress",
+    "primary": "One reference tree per outcome and year design; development/build only; freeze before evaluation.",
+    "evaluation": "Apply identical frozen rules across imputations; audit changing episode leaf membership when split variables are imputed.",
+    "stability": "Separately fitted trees across imputations are stability analysis; unmatched leaves are not automatically pooled.",
+    "not_yet_resolved": [
+      "Production inferential imputation integration",
+      "Uncertainty for fixed-rule effects with imputed split variables and clustering"
+    ],
+    "production_ready": false,
+    "construction": {
+      "status": "user_approved_prespecified_reference_imputation",
+      "imputation_number": 1,
+      "imputation_seed": 42,
+      "tree_seed": 42,
+      "selection_rule": "Prespecified draw; never select by significance or tree appearance",
+      "development_only": true
+    }
+  },
+  "state_bootstrap_validation": {
+    "status": "multivariable_engineering_pilot_completed; coverage_validation_pending",
+    "approval": "User agreed to validate state-bootstrap candidate after state/fold support audit.",
+    "production_adopted": false,
+    "runner": "notebooks/S1/helpers/pilot_state_bootstrap_mi.py",
+    "scope": "Small synthetic pilot retaining state adjustment; refit actual categorical imputer and nuisance estimators; not final coverage.",
+    "multivariable_runner": "notebooks/S1/helpers/pilot_multivariable_state_bootstrap.py",
+    "coverage_screen": {
+      "runner": "notebooks/S1/helpers/run_multivariable_state_coverage.py",
+      "datasets": 100,
+      "bootstrap_each": 199,
+      "m": 2,
+      "iterations": 2,
+      "workers": 4,
+      "scope": "preliminary candidate coverage; no production adoption",
+      "pointer": "outputs/logs/MULTIVARIABLE_STATE_COVERAGE_LATEST.json"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+candidate,outcome,unknown,comparison,treated
+MOUD_plan_service4,all,6441,40142,20345
+MOUD_plan_service4,completion,5830,30693,16896
+MOUD_plan_service4,frequency,865,31652,14849
+MOUD_plan_service5,all,4530,32442,16736
+MOUD_plan_service5,completion,3643,22097,14315
+MOUD_plan_service5,frequency,871,16417,6978
+MOUD_plan_service6,all,9348,53696,21831
+MOUD_plan_service6,completion,7390,19644,13182
+MOUD_plan_service6,frequency,1335,30987,9026
+MOUD_plan_service7,all,13025,136723,284725
+MOUD_plan_service7,completion,10326,68616,119109
+MOUD_plan_service7,frequency,2431,65960,175421
+residential_long_vs_short,all,0,304850,218800
+residential_long_vs_short,completion,0,243244,162728
+residential_long_vs_short,frequency,0,238098,115911

@@ -1,0 +1,11 @@
+{
+  "status": "descriptive_review_complete_inference_pending",
+  "source_run": "S1_01_data_preparation_20260922_113427_904266",
+  "source_manifest_sha256": "2495abc118c1df656675bebbb2920c4872bd666ac15dc899e20cd0d3e97b6d18",
+  "outputs": {
+    "weighted_outcome_draws.csv": "32be6b00a5126923b6a7571d5a44417046d044cf6e30178d337f1c6819d6b28d",
+    "state_concentration.csv": "05ab4daa8b5f75296dc2a4c6f2dacad6ed9d86bf7e862097df2961eb65afd26a",
+    "geographic_year_sensitivity.csv": "d957325eb6178884ecaa0eca1d5225fd24d0f2b505be39762e74bf2ae0e95d74"
+  },
+  "role": "descriptive outcome and geographic review; no confidence interval or causal claim"
+}

@@ -1,0 +1,6 @@
+state,year,pdf_page,crosswalk,mapping,implication
+New York,2022,8,2022-NY-teds-crosswalk.pdf,Yes from opioid-program type or positive therapy-plan field; no can include null plan outside opioid programs.,Program classification and missing plan information affect exposure coding.
+California,2022,6,2022-CA-teds-crosswalk.pdf,"Listed yes codes include methadone, LAAM and buprenorphine; other medication maps to unknown.",Listed drugs differ from the broad national definition; naltrexone is not explicitly listed.
+Florida,2022,8,2022-FL-teds-mhteds-combined-crosswalk.pdf,"Explicit yes, no, and unknown mapping.",Mapping is direct; recording time and drug coverage still require verification.
+Texas,2022,9,2022-TX-teds-mhteds-combined-crosswalk.pdf,Yes from listed opioid treatment service types; all other service types map to no.,Service-derived indicator may differ from individual medication planning.
+Ohio,2022,9,2022-OH-teds-mhteds-combined-crosswalk.pdf,MAT opiate addiction indicated maps to yes; blank maps to unknown.,Direct MAT indicator; timing and drug coverage remain unverified.

@@ -1,0 +1,367 @@
+{
+  "years": [
+    2022,
+    2023
+  ],
+  "fields": [
+    "AGE",
+    "GENDER",
+    "RACE",
+    "ETHNIC",
+    "MARSTAT",
+    "EDUC",
+    "VET",
+    "EMPLOY",
+    "DETNLF",
+    "PRIMINC",
+    "LIVARAG",
+    "PSOURCE",
+    "ARRESTS",
+    "PSYPROB",
+    "FREQ_ATND_SELF_HELP",
+    "NOPRIOR",
+    "SUB1",
+    "ROUTE1",
+    "FREQ1",
+    "FRSTUSE1",
+    "additional_substances_total",
+    "STFIPS",
+    "DISYR"
+  ],
+  "raw_sha256": {
+    "data/interim/csv/tedsd_puf_2022.csv": "c254c53fb9ae6fbdce9b2ad3d1f31c246d2386d6093f71160149fd04216518b9",
+    "data/interim/csv/tedsd_puf_2023.csv": "8073f862775c60e538ff0a607bd521339d1eca9189e1f454f60ef3948f9faf63"
+  },
+  "treatment": {
+    "0": "SERVICES=4 short-term residential",
+    "1": "SERVICES=5 long-term residential"
+  },
+  "support_rule": "Frozen state-year cells approved after ESS50 and one-time local-balance screen; frequency also excludes NJ2023. No recursive exclusions.",
+  "propensity": "five-fold logistic C1 joint state-year interactions",
+  "trimming": false,
+  "winsorization": false,
+  "samples": {
+    "completion": {
+      "n": 208421,
+      "states": 18,
+      "allowed_state_years": [
+        [
+          1,
+          2022
+        ],
+        [
+          1,
+          2023
+        ],
+        [
+          2,
+          2022
+        ],
+        [
+          8,
+          2022
+        ],
+        [
+          8,
+          2023
+        ],
+        [
+          9,
+          2022
+        ],
+        [
+          11,
+          2022
+        ],
+        [
+          17,
+          2022
+        ],
+        [
+          17,
+          2023
+        ],
+        [
+          19,
+          2023
+        ],
+        [
+          22,
+          2022
+        ],
+        [
+          22,
+          2023
+        ],
+        [
+          25,
+          2022
+        ],
+        [
+          25,
+          2023
+        ],
+        [
+          28,
+          2022
+        ],
+        [
+          28,
+          2023
+        ],
+        [
+          32,
+          2023
+        ],
+        [
+          34,
+          2022
+        ],
+        [
+          34,
+          2023
+        ],
+        [
+          36,
+          2022
+        ],
+        [
+          36,
+          2023
+        ],
+        [
+          39,
+          2022
+        ],
+        [
+          39,
+          2023
+        ],
+        [
+          42,
+          2022
+        ],
+        [
+          46,
+          2022
+        ],
+        [
+          46,
+          2023
+        ],
+        [
+          47,
+          2022
+        ],
+        [
+          47,
+          2023
+        ],
+        [
+          49,
+          2022
+        ],
+        [
+          49,
+          2023
+        ]
+      ],
+      "record_columns": [
+        "episode_source_id",
+        "AGE",
+        "GENDER",
+        "RACE",
+        "ETHNIC",
+        "MARSTAT",
+        "EDUC",
+        "VET",
+        "EMPLOY",
+        "DETNLF",
+        "PRIMINC",
+        "LIVARAG",
+        "PSOURCE",
+        "ARRESTS",
+        "PSYPROB",
+        "FREQ_ATND_SELF_HELP",
+        "NOPRIOR",
+        "SUB1",
+        "ROUTE1",
+        "FREQ1",
+        "FRSTUSE1",
+        "additional_substances_total",
+        "STFIPS",
+        "DISYR",
+        "REASON",
+        "outcome",
+        "treatment"
+      ],
+      "records_sha256": "ae4849dbba3f56dd12b35cdb5517695cd83a33f3cd8467259cf930e543e4164b",
+      "reference_file": "completion_fold_reference.csv.gz",
+      "reference_sha256": "201e7f6e618f4dc38a10c7928e8433a04e6206791d4462215167e3e6d06ee163",
+      "archived_file_sha256": "3388241e147cae961841d828e8a52068fb7e280aac5ecec8bfa77acc5f78d1c6"
+    },
+    "frequency": {
+      "n": 128605,
+      "states": 15,
+      "allowed_state_years": [
+        [
+          1,
+          2022
+        ],
+        [
+          1,
+          2023
+        ],
+        [
+          2,
+          2022
+        ],
+        [
+          8,
+          2022
+        ],
+        [
+          9,
+          2022
+        ],
+        [
+          11,
+          2022
+        ],
+        [
+          17,
+          2022
+        ],
+        [
+          17,
+          2023
+        ],
+        [
+          19,
+          2023
+        ],
+        [
+          21,
+          2022
+        ],
+        [
+          21,
+          2023
+        ],
+        [
+          22,
+          2023
+        ],
+        [
+          28,
+          2022
+        ],
+        [
+          28,
+          2023
+        ],
+        [
+          36,
+          2022
+        ],
+        [
+          36,
+          2023
+        ],
+        [
+          42,
+          2022
+        ],
+        [
+          46,
+          2022
+        ],
+        [
+          47,
+          2022
+        ],
+        [
+          47,
+          2023
+        ],
+        [
+          49,
+          2022
+        ],
+        [
+          49,
+          2023
+        ]
+      ],
+      "record_columns": [
+        "episode_source_id",
+        "AGE",
+        "GENDER",
+        "RACE",
+        "ETHNIC",
+        "MARSTAT",
+        "EDUC",
+        "VET",
+        "EMPLOY",
+        "DETNLF",
+        "PRIMINC",
+        "LIVARAG",
+        "PSOURCE",
+        "ARRESTS",
+        "PSYPROB",
+        "FREQ_ATND_SELF_HELP",
+        "NOPRIOR",
+        "SUB1",
+        "ROUTE1",
+        "FREQ1",
+        "FRSTUSE1",
+        "additional_substances_total",
+        "STFIPS",
+        "DISYR",
+        "outcome",
+        "treatment"
+      ],
+      "records_sha256": "b82ce4608fad09abc6e33d2989e9d9d64ce69cf7926b12ae13c2eb5eb8a637c9",
+      "reference_file": "frequency_fold_reference.csv.gz",
+      "reference_sha256": "075fcb90a3ff0a281b9b7632549a68a33d7be30cafc13058e179c3b9da2d347c",
+      "archived_file_sha256": "19bb788710c603c19653d910a9f763e4147e21bf55798a78c1feb8c3bf15345f"
+    }
+  },
+  "frozen_eligible_samples": {
+    "approved_date": "2026-09-20",
+    "status": "membership_frozen",
+    "missing_covariates": "retained for imputation",
+    "inference_status": "pending_validation",
+    "outcomes": {
+      "completion": {
+        "n": 241118,
+        "membership_sha256": "6d3b8ea45aaacc796ea1f8de94ff312843151f917fe603e3b0825152f19c71ba",
+        "state_year_rules": "samples.completion.allowed_state_years"
+      },
+      "frequency": {
+        "n": 146194,
+        "membership_sha256": "fa7b490a0a5c99115556e8ac4e5f625af58e4e0a2bb72c4a56691781b0d21263",
+        "state_year_rules": "samples.frequency.allowed_state_years"
+      }
+    }
+  },
+  "audit_only_fields": [
+    "METHUSE",
+    "DETCRIM",
+    "employment_joint_observed",
+    "referral_joint_observed",
+    "known_non_none_primary_substance",
+    "additional_substance_partial_information",
+    "completion_reason_1_vs_2_3",
+    "frequency_change_3level"
+  ],
+  "prespecified_sensitivities": {
+    "completion_reason_1_vs_2_3": "Among REASON codes 1, 2, and 3, compare completed treatment (1) with transfer or termination (2 or 3). Primary completion remains REASON 1 versus all known codes 2 through 7.",
+    "known_non_none_primary_substance": "Restrict to SUB1 codes 2 through 19. Report this explicitly for outpatient analyses because residential eligibility already applies this restriction.",
+    "tri_level_frequency_change": "For observed exact-one admission-substance matches among baseline users, classify improved=1, unchanged=0, worsened=-1. Binary reduction remains primary.",
+    "employment_joint_observed": "Audit the observed joint EMPLOY and DETNLF reporting state while preserving both raw variables and the approved primary model fields.",
+    "referral_joint_observed": "Audit PSOURCE with DETCRIM detail when PSOURCE=7. Use only after reporting-state support is documented.",
+    "methuse_reporting_support": "Audit observed METHUSE coverage by state-year. Do not interpret planned medication as verified receipt and do not add it to the primary adjustment set.",
+    "partial_additional_substance_information": "Keep the approved exact missingness rule primary; separately audit records with only one observed additional-substance slot."
+  }
+}

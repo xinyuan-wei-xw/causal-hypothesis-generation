@@ -1,0 +1,19 @@
+name: hypothesis-replication
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.14.7
+  - pip
+  - ipykernel
+  - pip:
+      - numpy
+      - pandas
+      - scipy
+      - matplotlib
+      - scikit-learn
+      - econml
+      - joblib
+      - ipython
+      - nbconvert

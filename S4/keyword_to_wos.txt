@@ -1,0 +1,76 @@
+WEB OF SCIENCE SMART SEARCH
+26 September 2026
+
+SEARCH SETTINGS
+1. Open Web of Science > Smart Search > Documents.
+2. Select Web of Science Core Collection.
+3. Paste one complete query below without adding TS=.
+4. Choose Boolean results rather than Semantic results.
+5. Do not add suggested keyword buttons.
+
+RESIDENTIAL SMART SEARCH
+(("substance use disorder" OR "substance use disorders" OR "substance abuse treatment" OR "substance use treatment" OR "addiction treatment" OR "drug treatment" OR "alcohol treatment")
+AND ("residential treatment" OR "residential care" OR "long-term residential" OR "long term residential" OR "short-term residential" OR "short term residential")
+AND (("treatment completion" OR "program completion" OR retention OR dropout OR attrition OR discharge)
+OR (race OR racial OR ethnicity OR ethnic OR Black OR "African American" OR "route of administration" OR oral OR inhalation OR injection OR polysubstance OR "multiple substances")))
+
+OUTPATIENT SMART SEARCH
+(("substance use disorder" OR "substance use disorders" OR "substance abuse treatment" OR "substance use treatment" OR "addiction treatment" OR "drug treatment" OR "alcohol treatment")
+AND ("intensive outpatient" OR "non-intensive outpatient" OR "nonintensive outpatient" OR "outpatient treatment")
+AND (("treatment completion" OR "program completion" OR retention OR dropout OR attrition OR discharge)
+OR (referral OR "referral source" OR self-referral OR "self referral" OR employment OR employed OR unemployment OR unemployed OR "labor force" OR alcohol OR heroin OR methamphetamine OR polysubstance OR "multiple substances" OR missingness OR "missing data")))
+
+WHY THESE WORDS ARE USED
+The population, treatment contrasts, and endpoint come from the verified Stage 2
+evidence objects:
+
+- Residential treatment: long-term versus short-term residential setting.
+- Outpatient treatment: intensive versus non-intensive outpatient setting.
+- Outcome: recorded administrative completion (REASON=1).
+
+The policy-tree variable terms come from the verified Stage 2 evidence bundle:
+
+- Residential tree: race, additional substances, and primary route of
+  administration, including oral and inhalation categories.
+- Outpatient tree: referral source, additional substances, employment status,
+  and primary substance, including methamphetamine or speed.
+
+Completion, retention, dropout, attrition, and discharge are retrieval synonyms
+for treatment continuation and administrative exit. Alternative spellings such
+as non-intensive/nonintensive and self-referral/self referral prevent avoidable
+retrieval loss. The added terms broaden literature retrieval; they are not new
+variables or empirical findings from this study.
+
+Local provenance:
+../S2/outputs/<latest verified run>/evidence_objects.csv
+../S2/outputs/<latest verified run>/evidence_bundle.json
+
+HOW TO EXPORT THE RESULTS
+Export article metadata and abstracts; full-text PDFs are not required.
+
+For each search:
+1. Select Export > Tab-delimited file.
+2. Do not select the checkbox for the first 50 visible records. That checkbox
+   selects only the current page.
+3. In the export dialog, select Records from 1 through the total result count.
+4. Select Full Record and Cited References.
+5. Select UTF-8 encoding.
+6. Save in this S4 folder using exactly these names:
+
+WoS_residential_20260926.txt
+WoS_outpatient_20260926.txt
+
+If Web of Science requires export batches, use:
+
+WoS_residential_20260926_part001.txt
+WoS_residential_20260926_part002.txt
+WoS_outpatient_20260926_part001.txt
+WoS_outpatient_20260926_part002.txt
+
+Standard full-record exports are limited to 1,000 records at a time. For more
+than 1,000 results, export 1-1000, 1001-2000, and so on. Do not use Fast 5000:
+it omits fields needed by S4, including full abstracts in some exports.
+
+Keep the result count, search date, database, exact query, and export filenames
+in the search record. Batch files must be merged with one header row before the
+current S4 notebook can read them.

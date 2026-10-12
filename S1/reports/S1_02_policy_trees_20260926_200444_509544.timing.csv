@@ -1,0 +1,9 @@
+stage,seconds
+Fit and evaluate residential_eligible completion tree,114.60331145790406
+Fit and evaluate residential_complete_case completion tree,78.18719587509986
+Fit and evaluate outpatient_eligible completion tree,201.194015041925
+Fit and evaluate outpatient_complete_case completion tree,96.87084650003817
+Fit 2022 outpatient tree and evaluate on 2023,114.33885779196862
+Evaluate mode-filled policy-input sensitivity on 2023,118.87366087501869
+Save policy trees and held-out summaries,0.08360545802861452
+Total elapsed,724.1514941669302

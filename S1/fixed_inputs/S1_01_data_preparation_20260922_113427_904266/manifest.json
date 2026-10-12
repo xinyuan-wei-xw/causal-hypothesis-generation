@@ -1,0 +1,96 @@
+{
+  "status": "verified_samples_and_imputation_draws",
+  "source_hashes": {
+    "data/interim/csv/tedsd_puf_2022.csv": "c254c53fb9ae6fbdce9b2ad3d1f31c246d2386d6093f71160149fd04216518b9",
+    "data/interim/csv/tedsd_puf_2023.csv": "8073f862775c60e538ff0a607bd521339d1eca9189e1f454f60ef3948f9faf63"
+  },
+  "specification_sha256": "a85a881096bd2505559e269c79ddb7f4de4c150aed22e5ed57a597f8bd17bad8",
+  "outputs": {
+    "completion_final_complete_case.csv.gz": {
+      "n": 208421,
+      "sha256": "732d2eeef12bfc7a386d90fc37e90e46abb8a578510c15246a719cb8a59fa38a"
+    },
+    "frequency_final_complete_case.csv.gz": {
+      "n": 128605,
+      "sha256": "bd8dde1ef9fba63cb75f5d87bf3df16a45ce21cd9c8beceaf10a224a0412079d"
+    },
+    "completion_final_eligible.csv.gz": {
+      "n": 241118,
+      "sha256": "d914061cc8eb8f5af4730fdb5d323dfaa1c9e1856d2579c525cf3e13c2e361c9",
+      "role": "frozen eligible population; missing covariates retained"
+    },
+    "frequency_final_eligible.csv.gz": {
+      "n": 146194,
+      "sha256": "8a708aebd3b8c0ab63413e310b0f40c05de4980addd2bf5652a0abcb854042c4",
+      "role": "frozen eligible population; missing covariates retained"
+    },
+    "completion_imputation_seed722/engineering_imputation_chain_1.csv.gz": {
+      "n": 241118,
+      "sha256": "6a840831aff0e901891db3177933453c8809098f5cc906e39ecdba846e498eda",
+      "seed": 722,
+      "chain": 1
+    },
+    "completion_imputation_seed722/engineering_imputation_chain_2.csv.gz": {
+      "n": 241118,
+      "sha256": "5e699dc017d0c08f6ef0368891b6704014ac433a36f126f516e5d8de6d17b490",
+      "seed": 722,
+      "chain": 2
+    },
+    "frequency_imputation_seed720/engineering_imputation_chain_1.csv.gz": {
+      "n": 146194,
+      "sha256": "8100415eeaecdfa200f1c68affeb0001f7c6bd329a67c97b2315f446cf400cb5",
+      "seed": 720,
+      "chain": 1
+    },
+    "frequency_imputation_seed720/engineering_imputation_chain_2.csv.gz": {
+      "n": 146194,
+      "sha256": "f479e3d86dbbcd2921368137a55eeced4ee33624fc06604e775558956c3137d1",
+      "seed": 720,
+      "chain": 2
+    },
+    "frequency_imputation_seed721/engineering_imputation_chain_1.csv.gz": {
+      "n": 146194,
+      "sha256": "02758a56ccdfc723eeb6aed5cc2a4a3f2c575a4671456bcbb6b78f3f3a8d9770",
+      "seed": 721,
+      "chain": 1
+    },
+    "frequency_imputation_seed721/engineering_imputation_chain_2.csv.gz": {
+      "n": 146194,
+      "sha256": "f880c0176bde263f8d6b715948c5fce3c2937dc0887135297d7918c6bba65971",
+      "seed": 721,
+      "chain": 2
+    }
+  },
+  "scope": "Frozen eligible membership and six imputation validation draws; imputation uncertainty and causal inference pending",
+  "trimming": false,
+  "winsorizing": false,
+  "imputation": {
+    "runs": {
+      "completion": [
+        722
+      ],
+      "frequency": [
+        720,
+        721
+      ]
+    },
+    "chains_per_seed": 2,
+    "iterations_per_chain": 10
+  },
+  "propensity_figures": [
+    {
+      "outcome": "completion",
+      "file": "completion_propensity_eligible_draw1.png",
+      "source_draw": "completion_imputation_seed722/engineering_imputation_chain_1.csv.gz",
+      "n": 241118,
+      "sha256": "48c43acf665bc46458292cdcd94b1114e1d2c2b8c39659603642873269368dbf"
+    },
+    {
+      "outcome": "frequency",
+      "file": "frequency_propensity_eligible_draw1.png",
+      "source_draw": "frequency_imputation_seed720/engineering_imputation_chain_1.csv.gz",
+      "n": 146194,
+      "sha256": "8bd561a4100a6e59528a2e95d7e1b71a43c5090fe1d4f44a715d169762201932"
+    }
+  ]
+}

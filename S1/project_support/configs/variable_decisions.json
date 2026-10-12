@@ -1,0 +1,198 @@
+[
+  {
+    "variable": "AGE",
+    "Original implementation": "Included",
+    "Study encoding and role": "Categorical age groups; preserve source bands.",
+    "rationale and limits": "Age can relate to treatment selection and completion.",
+    "status": "approved candidate; full implementation pending"
+  },
+  {
+    "variable": "GENDER",
+    "Original implementation": "Included; binary recode",
+    "Study encoding and role": "Recorded sex, categorical; harmonize SEX/GENDER naming.",
+    "rationale and limits": "Demographic adjustment; do not interpret as gender identity.",
+    "status": "approved candidate; full implementation pending"
+  },
+  {
+    "variable": "RACE",
+    "Original implementation": "Included after Hispanic overwrite",
+    "Study encoding and role": "Separate categorical race.",
+    "rationale and limits": "Preserve race information independently of ethnicity.",
+    "status": "approved candidate; full implementation pending"
+  },
+  {
+    "variable": "ETHNIC",
+    "Original implementation": "Used to overwrite race, then dropped",
+    "Study encoding and role": "Separate categorical ethnicity.",
+    "rationale and limits": "Avoid collapsing distinct race and ethnicity information.",
+    "status": "approved candidate; full implementation pending"
+  },
+  {
+    "variable": "MARSTAT",
+    "Original implementation": "Included",
+    "Study encoding and role": "Categorical admission-record marital status.",
+    "rationale and limits": "Potential social-support differences; missingness unresolved.",
+    "status": "approved candidate; full implementation pending"
+  },
+  {
+    "variable": "EDUC",
+    "Original implementation": "Included; codes shifted",
+    "Study encoding and role": "Categorical education groups.",
+    "rationale and limits": "Education may relate to access and completion; code shift alone is not a substantive defect.",
+    "status": "approved candidate; full implementation pending"
+  },
+  {
+    "variable": "VET",
+    "Original implementation": "Included; binary recode",
+    "Study encoding and role": "Binary veteran history.",
+    "rationale and limits": "Potential differences in service access and history.",
+    "status": "approved candidate; full implementation pending"
+  },
+  {
+    "variable": "EMPLOY",
+    "Original implementation": "Merged with detail",
+    "Study encoding and role": "Categorical admission employment.",
+    "rationale and limits": "Preserve parent status and conditional detail separately.",
+    "status": "approved candidate; full implementation pending"
+  },
+  {
+    "variable": "DETNLF",
+    "Original implementation": "Merged into EMPLOY",
+    "Study encoding and role": "Detail applies when EMPLOY=4.",
+    "rationale and limits": "Distinguish structural non-applicability from unknown applicable detail.",
+    "status": "approved candidate; full implementation pending"
+  },
+  {
+    "variable": "PRIMINC",
+    "Original implementation": "Included",
+    "Study encoding and role": "Categorical support source, not amount.",
+    "rationale and limits": "Potential resource differences; parental support for under-18s; reporting gaps.",
+    "status": "approved candidate; full implementation pending"
+  },
+  {
+    "variable": "LIVARAG",
+    "Original implementation": "Included",
+    "Study encoding and role": "Categorical admission living arrangement.",
+    "rationale and limits": "Potential housing/support differences.",
+    "status": "approved candidate; full implementation pending"
+  },
+  {
+    "variable": "PSOURCE",
+    "Original implementation": "Merged with criminal referral detail",
+    "Study encoding and role": "Categorical referral source.",
+    "rationale and limits": "Individual category includes more than self-referral; retain broad source.",
+    "status": "approved candidate; full implementation pending"
+  },
+  {
+    "variable": "DETCRIM",
+    "Original implementation": "Merged into PSOURCE",
+    "Study encoding and role": "Detail applies when PSOURCE=7.",
+    "rationale and limits": "Retain applicability and unknown detail rather than global deletion.",
+    "status": "approved candidate; full implementation pending"
+  },
+  {
+    "variable": "ARRESTS",
+    "Original implementation": "Included",
+    "Study encoding and role": "Preadmission categories 0, 1, 2+.",
+    "rationale and limits": "Justice involvement; not convictions or an unrestricted numeric count.",
+    "status": "approved candidate; full implementation pending"
+  },
+  {
+    "variable": "PSYPROB",
+    "Original implementation": "Included",
+    "Study encoding and role": "Binary reported co-occurring disorder; same-sample exclusion sensitivity.",
+    "rationale and limits": "Admission field, but assessment timing and ascertainment vary.",
+    "status": "approved candidate; full implementation pending"
+  },
+  {
+    "variable": "FREQ_ATND_SELF_HELP",
+    "Original implementation": "Included with problematic recode",
+    "Study encoding and role": "Five nominal categories, including some attendance with unknown frequency.",
+    "rationale and limits": "Correct ordering error; preadmission support indicator.",
+    "status": "approved candidate; full implementation pending"
+  },
+  {
+    "variable": "NOPRIOR",
+    "Original implementation": "Included",
+    "Study encoding and role": "Binary none versus at least one prior episode.",
+    "rationale and limits": "Treatment history; not exact number of prior episodes.",
+    "status": "approved candidate; full implementation pending"
+  },
+  {
+    "variable": "SUB1",
+    "Original implementation": "Included; pooled rare categories globally",
+    "Study encoding and role": "Categorical primary substance; no automatic global rare pooling.",
+    "rationale and limits": "Different substance profiles; learn any future pooling only in development.",
+    "status": "approved candidate; full implementation pending"
+  },
+  {
+    "variable": "ROUTE1",
+    "Original implementation": "Included",
+    "Study encoding and role": "Categorical route.",
+    "rationale and limits": "Substance-use pattern; not ordinal severity.",
+    "status": "approved candidate; full implementation pending"
+  },
+  {
+    "variable": "FREQ1",
+    "Original implementation": "Included; codes shifted",
+    "Study encoding and role": "Categorical admission frequency.",
+    "rationale and limits": "Baseline use; no use is valid, not missing.",
+    "status": "approved candidate; full implementation pending"
+  },
+  {
+    "variable": "FRSTUSE1",
+    "Original implementation": "Included; grouped categories",
+    "Study encoding and role": "Preserve seven source age bands.",
+    "rationale and limits": "History; alcohol refers to first intoxication, not exact duration of use.",
+    "status": "approved candidate; full implementation pending"
+  },
+  {
+    "variable": "additional_substances_total",
+    "Original implementation": "EXTRASUB counted unknown slots as substances",
+    "Study encoding and role": "Exact 0/1/2 only with both slots known; approved categorical partial-information alternative.",
+    "rationale and limits": "Correct missing-as-substance behavior while preserving uncertainty.",
+    "status": "approved candidate; full implementation pending"
+  },
+  {
+    "variable": "STFIPS",
+    "Original implementation": "Included in W; state exclusions in preprocessing",
+    "Study encoding and role": "Categorical adjustment W; no direct heterogeneity X.",
+    "rationale and limits": "Geographic reporting/context; final reporting restriction remains undecided.",
+    "status": "approved candidate; full implementation pending"
+  },
+  {
+    "variable": "SERVICES",
+    "Original implementation": "Included in X; four settings selected",
+    "Study encoding and role": "Categorical X in pooled-setting models; omit within constant setting.",
+    "rationale and limits": "Setting differences; admission/transfer episode timing requires care.",
+    "status": "approved candidate; full implementation pending"
+  },
+  {
+    "variable": "METHUSE",
+    "Original implementation": "Included",
+    "Study encoding and role": "Binary admission medication-plan indicator; separate applicability review.",
+    "rationale and limits": "Plan is not verified receipt; keep exclusion sensitivity and pause reporting-screen use.",
+    "status": "approved candidate; full implementation pending"
+  },
+  {
+    "variable": "PRIMPAY",
+    "Original implementation": "Initially selected then dropped",
+    "Study encoding and role": "Categorical; not required by primary screen",
+    "rationale and limits": "Payment anticipated at admission",
+    "status": "approved sensitivity only"
+  },
+  {
+    "variable": "DAYWAIT",
+    "Original implementation": "Initially selected then dropped",
+    "Study encoding and role": "Categorical; not required by primary screen",
+    "rationale and limits": "Pre-admission waiting categories, not exact days",
+    "status": "sensitivity candidate"
+  },
+  {
+    "variable": "HLTHINS",
+    "Original implementation": "Not selected",
+    "Study encoding and role": "Categorical; not required by primary screen",
+    "rationale and limits": "Insurance at admission; not equivalent to payment source",
+    "status": "sensitivity candidate"
+  }
+]

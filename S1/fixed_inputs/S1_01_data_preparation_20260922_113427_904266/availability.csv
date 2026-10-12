@@ -1,0 +1,5 @@
+outcome,arm,target_n,observed_n,complete_n,observed_percent
+completion,0,163356,163356,140231,100.0
+completion,1,77762,77762,68190,100.0
+frequency,0,119067,116501,102149,97.84491084851386
+frequency,1,30718,29693,26456,96.66319421837359

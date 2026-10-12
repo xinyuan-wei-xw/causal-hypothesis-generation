@@ -1,0 +1,47 @@
+{
+  "status": "ordered_workflow_final_analysis_steps_not_yet_implemented",
+  "notebooks": [
+    {
+      "order": 1,
+      "file": "notebooks/S1/S1_01_data_preparation.ipynb",
+      "role": "Raw preparation, three annual/pooled exports and validation"
+    },
+    {
+      "order": 2,
+      "file": "notebooks/S1/S1_02_sample_and_missingness_assessment.ipynb",
+      "role": "Sample and missingness assessment"
+    },
+    {
+      "order": 4,
+      "file": "notebooks/S1/S1_04_variable_and_population_decisions.ipynb",
+      "role": "Variable and population decisions"
+    },
+    {
+      "order": 5,
+      "file": "notebooks/S1/S1_05_outcome_definition_audit.ipynb",
+      "role": "Outcome definitions"
+    },
+    {
+      "order": 6,
+      "file": "notebooks/S1/S1_06_preliminary_missing_outcome_sensitivity.ipynb",
+      "role": "Preliminary missing-outcome sensitivity"
+    },
+    {
+      "order": 7,
+      "file": "notebooks/S1/S1_07_imputation_evaluation.ipynb",
+      "role": "Imputation evaluation"
+    },
+    {
+      "order": 9,
+      "file": "notebooks/S1/S1_09_sensitivity_analyses.ipynb",
+      "role": "Sensitivity registry and synthetic executable comparisons"
+    }
+  ],
+  "planned_not_implemented": [
+    "Final MI integration and analytical exports",
+    "Revised inferential estimation and temporal validation",
+    "Full sensitivity execution and Stage 1 handoff; numbering assigned on implementation"
+  ],
+  "archive": "notebooks/archive/pre_sequential_20260910",
+  "retired_replication_notebook": "notebooks/archive/s1_cleanup_20260915T011451148152Z/S1_03_supplied_code_replication.ipynb"
+}

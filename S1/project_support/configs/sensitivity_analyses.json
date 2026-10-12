@@ -1,0 +1,347 @@
+{
+  "schema_version": 1,
+  "production_ready": false,
+  "main_analysis": "Revised measurements and agreed primary specification; no known coding errors as alternatives.",
+  "common_requirements": [
+    "Specify reference and alternative before examining effect estimates.",
+    "Record sample IDs or hashes, folds, exposure, outcome, features, settings and runtime.",
+    "Report changed membership and changed target effects explicitly.",
+    "No significance-based choice of specifications or robustness pass/fail.",
+    "Current complete-input component produces no inferential research results."
+  ],
+  "analyses": [
+    {
+      "id": "adjustment_set",
+      "title": "Adjustment-set sensitivity",
+      "threat": "Dependence on uncertain covariate timing and adjustment choices",
+      "variation": "Refit primary and without_psyprob; add METHUSE only within a prespecified reporting-support population; PRIMPAY only with explicitly prepared common inputs",
+      "fields": [
+        "PSYPROB",
+        "METHUSE",
+        "PRIMPAY"
+      ],
+      "status": "complete_case_point_comparisons_completed_main_inference_pending",
+      "production_enabled": false,
+      "pending": [
+        "Validated inferential imputation adapter",
+        "Final uncertainty procedure"
+      ],
+      "reference": "approved main specification",
+      "fixed": "Exposure, outcome, episode IDs and folds where feasible; disclose any changes",
+      "target_change": "Explicitly report if population or estimand differs",
+      "numerical_parameters": null,
+      "required_for_designs": [
+        "completion",
+        "frequency_reduction"
+      ],
+      "applicability_rule": "Assess for each DV; document not-applicable cases with evidence rather than mechanically forcing a test.",
+      "notebook": "notebooks/S1/sensitivity/S1_SA01_adjustment_set.ipynb",
+      "detcrim_reporting_state_comparison": {
+        "status": "approved_pending_execution",
+        "primary_omits": "DETCRIM",
+        "parent_retained": "PSOURCE",
+        "design": "Define reporting states using applicable training observations; compare addition of DETCRIM on the same reporting-state episodes and folds. Do not compare a restricted-state estimate directly with the broader primary estimate as an isolated feature effect.",
+        "limitation": "Observed reporting does not establish ignorable missingness; assess remaining applicable missing values."
+      },
+      "tree_result_assessment": "Refit the causal forest and policy tree under defensible adjustment alternatives. Compare splits, subgroup membership, subgroup estimates and policy assignments; retain same-episode comparisons where possible.",
+      "tree_assessment_status": "complete_case_refits_and_stability_checks_completed_final_imputed_assessment_pending",
+      "complete_case_point_comparisons": {
+        "directory": "outputs/tables/adjustment_sets_20260917T200909Z",
+        "year_designs": 3,
+        "outcomes": 2,
+        "comparisons_each": 3,
+        "population": "Common category-supported complete-case evaluation episodes; exclusions disclosed",
+        "inference": "not computed",
+        "tree_refits": false
+      },
+      "tree_runner": "notebooks/S1/helpers/run_adjustment_tree_sensitivity.py",
+      "tree_progress_pointer": "outputs/logs/SA01_TREES_LATEST.json",
+      "tree_review": "outputs/tables/adjustment_trees_20260917T204155Z/prediction_review.json"
+    },
+    {
+      "id": "covariate_missingness",
+      "title": "Covariate-missingness sensitivity",
+      "threat": "Dependence on missing-data models and selection into complete cases",
+      "variation": "Categorical-regression MI versus CART MI and explicitly defined complete-case analysis",
+      "fields": [],
+      "status": "pending_integration",
+      "production_enabled": false,
+      "pending": [
+        "Validated expanded MI",
+        "Applicability-aware complete-case rule",
+        "Compatible pooled inference",
+        "Any missingness-departure scenarios require specification"
+      ],
+      "reference": "approved main specification",
+      "fixed": "Exposure, outcome, episode IDs and folds where feasible; disclose any changes",
+      "target_change": "Explicitly report if population or estimand differs",
+      "numerical_parameters": null,
+      "required_for_designs": [
+        "completion",
+        "frequency_reduction"
+      ],
+      "applicability_rule": "Assess for each DV; document not-applicable cases with evidence rather than mechanically forcing a test.",
+      "notebook": "notebooks/S1/sensitivity/S1_SA02_covariate_missingness.ipynb",
+      "tree_result_assessment": "Compare tree results under validated categorical MI, CART MI and complete cases. Disclose population changes and summarize variation across imputations; never concatenate draws as independent episodes.",
+      "tree_assessment_status": "planned_not_completed"
+    },
+    {
+      "id": "overlap_weights",
+      "title": "Limited-overlap and weight sensitivity",
+      "threat": "Dependence on extreme weights or unsupported extrapolation",
+      "variation": "Explicit weight-handling rules and separately labeled supported-population contrasts",
+      "fields": [],
+      "status": "pending_specification",
+      "production_enabled": false,
+      "pending": [
+        "Weight rule and thresholds",
+        "Restricted target population",
+        "Uncertainty procedure"
+      ],
+      "reference": "approved main specification",
+      "fixed": "Exposure, outcome, episode IDs and folds where feasible; disclose any changes",
+      "target_change": "Explicitly report if population or estimand differs",
+      "numerical_parameters": null,
+      "required_for_designs": [
+        "completion",
+        "frequency_reduction"
+      ],
+      "applicability_rule": "Assess for each DV; document not-applicable cases with evidence rather than mechanically forcing a test.",
+      "notebook": "notebooks/S1/sensitivity/S1_SA03_overlap_weights.ipynb",
+      "tree_result_assessment": "Evaluate tree results under defensible support/weight rules supported by the estimator. Report changed populations, node sample sizes and treatment support; do not mechanically transfer AIPW clipping to a forest.",
+      "tree_assessment_status": "planned_not_completed",
+      "complete_case_point_comparisons": {
+        "status": "completed",
+        "directory": "outputs/tables/complete_case_sensitivity_20260917T023945Z",
+        "year_designs": 3,
+        "outcomes": 2,
+        "inference": "not computed; point comparisons only",
+        "tree_refits": false
+      }
+    },
+    {
+      "id": "missing_outcomes",
+      "title": "Missing-discharge-outcome sensitivity",
+      "threat": "Selection into observed frequency outcomes",
+      "variation": "Explicit departures from reference outcome-observation assumptions by exposure group",
+      "fields": [],
+      "status": "pending_specification",
+      "production_enabled": false,
+      "pending": [
+        "Observation model and positivity checks",
+        "Departure scenarios",
+        "Target population and estimator; descriptive bounds are not causal-effect bounds"
+      ],
+      "reference": "approved main specification",
+      "fixed": "Exposure, outcome, episode IDs and folds where feasible; disclose any changes",
+      "target_change": "Explicitly report if population or estimand differs",
+      "numerical_parameters": null,
+      "required_for_designs": [
+        "completion",
+        "frequency_reduction"
+      ],
+      "applicability_rule": "Required for frequency missingness; assess completion ascertainment and REASON eligibility selection separately. Observed completion by construction does not eliminate selection.",
+      "notebook": "notebooks/S1/sensitivity/S1_SA04_missing_outcomes.ipynb",
+      "tree_result_assessment": "For frequency, assess how outcome-observation assumptions affect subgroup estimates and policy conclusions. Refit trees only when the scenario defines compatible estimation inputs; assess completion ascertainment/selection separately.",
+      "tree_assessment_status": "planned_not_completed"
+    },
+    {
+      "id": "unmeasured_confounding",
+      "title": "Unmeasured-confounding sensitivity",
+      "threat": "Bias from omitted common causes of LOS and outcome",
+      "variation": "Estimator-compatible sensitivity parameters calibrated against observed covariates where possible",
+      "fields": [],
+      "status": "pending_specification",
+      "production_enabled": false,
+      "pending": [
+        "Compatible method and effect scale",
+        "Calibration and scenario range"
+      ],
+      "reference": "approved main specification",
+      "fixed": "Exposure, outcome, episode IDs and folds where feasible; disclose any changes",
+      "target_change": "Explicitly report if population or estimand differs",
+      "numerical_parameters": null,
+      "required_for_designs": [
+        "completion",
+        "frequency_reduction"
+      ],
+      "applicability_rule": "Assess for each DV; document not-applicable cases with evidence rather than mechanically forcing a test.",
+      "notebook": "notebooks/S1/sensitivity/S1_SA05_unmeasured_confounding.ipynb",
+      "tree_result_assessment": "Assess vulnerability of both result sets and prespecified or independently evaluated subgroups using a compatible method. Fixed-group sensitivity bounds do not certify the entire selected tree or require a new tree for every parameter.",
+      "tree_assessment_status": "planned_not_completed",
+      "complete_case_point_comparisons": {
+        "status": "completed",
+        "directory": "outputs/tables/complete_case_sensitivity_20260917T023945Z",
+        "year_designs": 3,
+        "outcomes": 2,
+        "inference": "not computed; point comparisons only",
+        "tree_refits": false
+      }
+    },
+    {
+      "id": "estimation_method",
+      "title": "Estimation-method sensitivity",
+      "threat": "Dependence on estimation and nuisance-model specifications",
+      "variation": "Alternative estimator for the same effect and prespecified nuisance-model alternatives",
+      "fields": [],
+      "status": "pending_specification",
+      "production_enabled": false,
+      "pending": [
+        "Alternative estimator",
+        "Fixed tuning protocol",
+        "Compatible uncertainty"
+      ],
+      "reference": "approved main specification",
+      "fixed": "Exposure, outcome, episode IDs and folds where feasible; disclose any changes",
+      "target_change": "Explicitly report if population or estimand differs",
+      "numerical_parameters": null,
+      "required_for_designs": [
+        "completion",
+        "frequency_reduction"
+      ],
+      "applicability_rule": "Assess for each DV; document not-applicable cases with evidence rather than mechanically forcing a test.",
+      "notebook": "notebooks/S1/sensitivity/S1_SA06_estimation_method.ipynb",
+      "tree_result_assessment": "Compare compatible heterogeneous-effect learners and resulting tree summaries when available; retain AIPW/IPW/standardization average estimates as supporting benchmarks rather than claiming they independently produce comparable trees.",
+      "tree_assessment_status": "planned_not_completed",
+      "complete_case_point_comparisons": {
+        "status": "completed",
+        "directory": "outputs/tables/complete_case_sensitivity_20260917T023945Z",
+        "year_designs": 3,
+        "outcomes": 2,
+        "inference": "not computed; point comparisons only",
+        "tree_refits": false
+      }
+    },
+    {
+      "id": "sample_size",
+      "title": "Sample-size and subsampling stability",
+      "status": "complete_case_stability_completed_and_reviewed_main_integration_pending",
+      "production_enabled": false,
+      "required_for_designs": [
+        "completion",
+        "frequency_reduction"
+      ],
+      "notebook": "notebooks/S1/sensitivity/S1_SA07_sample_size_stability.ipynb",
+      "reference": "Full frozen development population; same comparison records",
+      "variation": "Nested stratified development subsamples with repeated sampling seeds",
+      "numerical_parameters": {
+        "proposed_fractions": [
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "proposed_sampling_seeds": [
+          11,
+          22,
+          33,
+          44,
+          55
+        ],
+        "model_seed": 123,
+        "status": "Executed complete-case grid; main imputed integration pending"
+      },
+      "fixed": "Cohort, eligibility, measurements, model protocol, comparison IDs and policy threshold",
+      "pending": [
+        "Finalize year and development/evaluation design",
+        "Integrate frozen main-model and imputation protocol",
+        "Prespecify subgroup uncertainty and precision criteria"
+      ],
+      "tree_assessment_status": "complete_case_policy_partition_stability_reviewed_cate_and_imputed_assessment_pending",
+      "limitations": [
+        "Stability diagnostic, not endogeneity test",
+        "Year pooling changes composition as well as size",
+        "Synthetic preview is not equivalent to main forest",
+        "Repeated sampling ranges are not confidence intervals"
+      ],
+      "complete_case_stability": {
+        "series": "outputs/logs/sa07_series_20260917T133041Z",
+        "fits": 120,
+        "review": "outputs/logs/sa07_series_20260917T133041Z/review",
+        "policy_agreement": "All fitted policies recommend treatment for every comparison episode at zero threshold",
+        "partition_metric": "Policy-leaf ARI; not CATE-tree stability",
+        "inference": "No p-values or confidence intervals"
+      }
+    }
+  ],
+  "separate_activities": {
+    "feature_revision": "main preparation; previous-definition comparisons explain changes",
+    "partial_additional_substance_information": "feature-representation comparison, outside core six",
+    "los_thresholds": "Historical duration design: >30 days primary; >90 days optional exposure-definition sensitivity.",
+    "primary_slot_frequency": "separate measurement comparison; substantive defensibility required",
+    "balance_calibration_imputation_checks": "diagnostics and quality assurance",
+    "temporal_2023": "frozen temporal validation",
+    "setting_effects": "heterogeneity analysis",
+    "seeds_tree_stability": "reproducibility and subgroup stability",
+    "coding_errors": "correction; never a defensible sensitivity alternative"
+  },
+  "required_designs": [
+    {
+      "id": "completion",
+      "exposure": "los_gt30",
+      "outcome": "completion_original",
+      "required": true
+    },
+    {
+      "id": "frequency_reduction",
+      "exposure": "los_gt30",
+      "outcome": "same_substance_frequency_reduction",
+      "required": true,
+      "positive": "less use than admission",
+      "negative": "same or more use than admission",
+      "operationalization": "Use same-substance matching within the baseline-user population.",
+      "unmatched_or_missing": "unclassified; never infer no use",
+      "baseline_nonusers": "Separate sustained-abstinence analysis for baseline nonusers."
+    }
+  ],
+  "endogeneity_assessment": {
+    "required_for": [
+      "completion",
+      "frequency_reduction"
+    ],
+    "components": [
+      "Temporal and definitional identification assessment",
+      "Balance and overlap diagnostics",
+      "Raw versus adjusted contrasts",
+      "Unmeasured-confounding sensitivity with estimator-compatible method",
+      "Outcome-observation selection assessment for each DV"
+    ],
+    "status": "required_not_completed",
+    "limitations": "No omnibus test proves absence of endogeneity. Realized LOS/outcome joint determination remains; no unsupported IV or reverse-causality test.",
+    "tree_scope": "Both outcome result sets; subgroup-specific diagnostics where estimable. No significance-based model selection or claim that tests establish exogeneity."
+  },
+  "development_results": {
+    "summary": "outputs/tables/two_outcome_summary_20260913T025149970692Z",
+    "scope": "real training complete-case point estimates only",
+    "primary_imputed_analysis_complete": false,
+    "families_exercised": [
+      "adjustment_set",
+      "overlap_weights"
+    ],
+    "final_inference": false,
+    "status": "archived_previous_sample_results",
+    "archive_pointer": "configs/previous_sample_runs_archive.json"
+  },
+  "phase_deliverables": {
+    "source": "Historical duration design: two sets of trees using the same 30-day treatment definition, with completion and frequency outcomes and sensitivity analyses for both.",
+    "primary_outputs": [
+      "completion causal-forest and policy-tree results",
+      "frequency-reduction causal-forest and policy-tree results"
+    ],
+    "supporting_outputs": [
+      "average estimates",
+      "overlap and selection diagnostics",
+      "endogeneity assessment",
+      "sensitivity of both tree-result sets"
+    ],
+    "tree_preview_run": "outputs/tables/revised_policy_trees_20260914T160758593294Z",
+    "tree_preview_status": "archived_previous_sample_preview; not current results",
+    "decision_rule": "Do not mark a family finalized solely because average-effect comparisons ran."
+  },
+  "sample_reset": {
+    "status": "complete_case_reference_models_available_main_imputed_models_pending",
+    "datasets_pointer": "data/processed/YEAR_SAMPLES_LATEST.json",
+    "year_design": "not_changed_by_cleanup",
+    "reference_pointer": "outputs/logs/THREE_DESIGN_CC_LATEST.json"
+  }
+}
