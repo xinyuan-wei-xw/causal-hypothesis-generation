@@ -5,7 +5,7 @@
 This project connects causal analysis, structured evidence statements, and large language models (LLMs) to develop hypotheses for further investigation.
 The workflow makes each candidate traceable to its empirical motivation and evaluates its scientific quality and novelty relative to retrieved literature.
 
-The framework has four stages: causal analysis, evidence statement generation, hypothesis generation, and hypothesis evaluation.
+The framework has four stages: Causal Analysis of Observational Data, Translation of Causal Estimates, Candidate Hypothesis Generation, and Candidate Hypothesis Evaluation and Prioritization.
 The empirical application examines recorded treatment completion in substance use treatment, comparing long-term with short-term residential care and intensive with non-intensive outpatient care.
 
 **Release status:** This repository currently provides the project overview.
@@ -17,10 +17,10 @@ The replication code and research outputs are being prepared for public release.
 
 | Stage | Method | Main output |
 | :--- | :--- | :--- |
-| **1. Causal analysis** | Estimate treatment-effect heterogeneity, learn policy trees, and assess sensitivity to analytical choices. | Treatment-effect estimates, tree-defined subgroups, and diagnostics. |
-| **2. Evidence statement generation** | Extract complete tree paths and link subgroup conditions to saved estimates and evidence identifiers. | Structured evidence shared across hypothesis-generating models. |
-| **3. Hypothesis generation** | Prompt multiple models with the same aggregate evidence and check candidate structure and evidence references. | Hypotheses, proposed mechanisms, observable implications, and validity threats. |
-| **4. Hypothesis evaluation** | Assess scientific quality and relationships to prior studies, then apply deterministic eligibility rules and nondominated sorting. | Evaluator-specific ratings, novelty assessments, priority tiers, and comparisons. |
+| **1. Causal Analysis of Observational Data** | Estimate treatment-effect heterogeneity, learn policy trees, and assess sensitivity to analytical choices. | Treatment-effect estimates, tree-defined subgroups, and diagnostics. |
+| **2. Translation of Causal Estimates** | Extract complete tree paths and link subgroup conditions to saved estimates and evidence identifiers. | Structured evidence shared across hypothesis-generating models. |
+| **3. Candidate Hypothesis Generation** | Prompt multiple models with the same aggregate evidence and check candidate structure and evidence references. | Hypotheses, proposed mechanisms, observable implications, and validity threats. |
+| **4. Candidate Hypothesis Evaluation and Prioritization** | Assess scientific quality and relationships to prior studies, then apply deterministic eligibility rules and nondominated sorting. | Evaluator-specific ratings, novelty assessments, priority tiers, and comparisons. |
 
 ## How hypotheses are evaluated
 
@@ -34,9 +34,9 @@ Each evaluator assigns integer ratings from **1 to 5** on seven dimensions and e
 | Feasibility | Whether the required data and study design can realistically be obtained and implemented. |
 | Testability | Whether observable evidence can distinguish the hypothesis from plausible alternatives. |
 | Clarity | Whether the population, treatment contrast, direction, and outcome are explicit. |
-| Clinical relevance | Relevance to treatment decisions and administration in this empirical application. |
+| Domain relevance (clinical relevance in this application) | Relevance to treatment decisions and administration in this empirical application. |
 
-Clinical relevance is the application-specific dimension.
+Domain relevance is operationalized as clinical relevance in this application.
 Applications in other domains require an appropriate definition of practical relevance.
 
 **Novelty** is assessed separately by examining the proposed relationship against retrieved studies.
@@ -68,9 +68,9 @@ These folders will become available when the code is uploaded.
 | :--- | :--- |
 | `S1/` | Data preparation, causal analysis, and completion inference. |
 | `S1/sensitivity/` | Sensitivity analyses and summary generation. |
-| `S2/` | Evidence statement generation. |
-| `S3/` | Multi-model hypothesis generation. |
-| `S4/` | Literature-informed evaluation and code-generated exports. |
+| `S2/` | Translation of Causal Estimates. |
+| `S3/` | Candidate Hypothesis Generation. |
+| `S4/` | Candidate Hypothesis Evaluation and Prioritization, with code-generated exports. |
 | `src/` | Shared Python analysis modules. |
 | `configs/` | Study specifications and analysis settings. |
 
