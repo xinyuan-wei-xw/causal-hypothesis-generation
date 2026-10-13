@@ -8,7 +8,7 @@ The workflow makes each candidate traceable to its empirical motivation and eval
 The framework has four stages: Causal Analysis of Observational Data, Translation of Causal Estimates, Candidate Hypothesis Generation, and Candidate Hypothesis Evaluation and Prioritization.
 The empirical application examines recorded treatment completion in substance use treatment, comparing long-term with short-term residential care and intensive with non-intensive outpatient care.
 
-**Release status:** This private repository contains the October 11 replication code and prepared inputs for collaborator review.
+**Release status:** This repository contains the October 11 replication code and prepared inputs for research use.
 Saved Stage 1–4 result folders are not included in this snapshot.
 
 [Workflow](#what-each-stage-contributes) · [Evaluation](#how-hypotheses-are-evaluated) · [Replication](#replication-package) · [Questions](#questions-and-contributions)
@@ -84,7 +84,9 @@ Model outputs can vary across reruns.
 
 Run the stage notebooks in order after configuring their inputs and model services.
 The current Stage 4 default points to a saved literature corpus that is absent from this snapshot; it also requires the corresponding run configuration.
-The Web of Science exports are included for private collaborator review.
+Web of Science exports are not distributed in this repository.
+Use the search strings in `S4/keyword_to_wos.txt` with your own authorized Web of Science access and save the exports locally as `S4/WoS_residential_20260926.txt` and `S4/WoS_outpatient_20260926.txt`.
+These local exports are excluded from Git; they do not replace the separate frozen-corpus requirement described above.
 A complete rerun of this packaged snapshot has not yet been verified.
 
 ## Questions and contributions

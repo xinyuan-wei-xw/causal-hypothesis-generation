@@ -5,3 +5,6 @@ __pycache__/
 .env.*
 .venv/
 .ipynb_checkpoints/
+
+# Literature exports obtained through licensed access
+S4/WoS_*.txt
